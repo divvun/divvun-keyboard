@@ -2,7 +2,7 @@ git_url "git@gtsvn.uit.no:divvunlane.git"
 
 type "development" # The default type, can be: appstore, adhoc or development
 
-app_identifier "no.uit.giella.keyboards.__UND__" 
+app_identifier "no.uit.giella.keyboards.Sami" 
 username "feedback@divvun.no" # Your Apple Developer Portal username
 
 # For all available options run `match --help`

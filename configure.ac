@@ -24,8 +24,8 @@
 # third field is email address for bug reports
 # fourth field is the name of the package made by make dist, excluding .tar.gz
 # fifth field is the project web address
-AC_INIT([giellakeyboards-__UND__], [20130628], [feedback@divvun.no],
-        [giellakeyboards-__UND__], [http://divvun.no])
+AC_INIT([giellakeyboards-smi], [20130628], [feedback@divvun.no],
+        [giellakeyboards-smi], [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
 # These configuration dirs hide some extra cruft
@@ -46,12 +46,12 @@ _giella_core_min_version=0.2.40
 # GTLANG is the language code used to identify this project; it should be same
 # as the directory name in gtsvn and same as ISO 639 three-letter code for the
 # language if possible
-AC_SUBST([GTLANG], [__UND__])
+AC_SUBST([GTLANG], [smi])
 
 # GTLANG2 is the shortest unambiguous language code for this project; it
 # should be the ISO 639-1 two-letter code if possible, otherwise usually same
 # as above
-AC_SUBST([GTLANG2], [__UND2C__])
+AC_SUBST([GTLANG2], [smi])
 
 # Tests and sets up directories and scripts neeeded by the Giella infra:
 gt_PROG_SCRIPTS_PATHS
