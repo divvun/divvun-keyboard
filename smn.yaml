@@ -1,0 +1,67 @@
+internalName: inari_sami_keyboard
+
+displayNames:
+  smn: Anarâškielâ
+  en: Inari Sami
+  fi: Inarinsaame
+  nb: Enaresamisk
+  se: Anársámegiella
+  sv: Enaresamiska
+
+locale: smn
+
+modes:
+  mobile-default: |
+    á š e r t y u i o p â
+    a s d f g h j k l ä đ
+      ž z č c v b n m ŋ
+  mobile-shift: |
+    Á Š E R T Y U I O P Â
+    A S D F G H J K L Ä Đ
+      Ž Z Č C V B N M Ŋ
+
+longpress:
+  A: Á Å Â Ä Æ Â
+  Á: Q
+  C: Ç
+  Č: X
+  D: Đ
+  G: Ǧ Ǥ 
+  I: Ï
+  K: Ǩ
+  N: Ŋ
+  O: Õ Ø Ö
+  Š: W
+  T: Ŧ
+  V: W
+  Z: Ǯ Ʒ
+
+  a: á å â ä æ â
+  á: q
+  c: ç
+  č: x
+  d: đ
+  g: ǧ ǥ 
+  i: ï
+  k: ǩ
+  n: ŋ
+  o: õ ø ö
+  š: w
+  t: ŧ
+  v: w
+  z: ǯ ʒ
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: koskâ
+  return: raddalâs

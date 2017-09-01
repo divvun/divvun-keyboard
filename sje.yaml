@@ -1,0 +1,67 @@
+internalName: pite_sami_keyboard
+
+displayNames:
+  sje: Bidumsámegiella
+  en: Pite Sami
+  fi: Piitimensaame
+  nb: Pitesamisk
+  se: Bihtánsámegiella
+  sv: Pitesamiska
+
+locale: sje
+
+modes:
+  mobile-default: |
+    á w e r t y u i o p å
+    a s d f g h j k l ä ŋ
+    z x c v b n m 
+  mobile-shift: |
+    Á W E R T Y U I O P Å
+    A S D F G H J K L Ä Ŋ
+    Z X C V B N M 
+
+longpress:
+  A: Á Å Â Ä Æ
+  Á: Q
+  C: Č Ç
+  D: Đ
+  G: Ǧ Ǥ Ǧ
+  I: Ï
+  K: Ǩ
+  N: Ŋ
+  O: Õ Ø Ö
+  S: Š
+  T: Ŧ
+  Z: Ǯ Ʒ
+  Æ: Ä
+  Ö: Ø
+
+  a: á å â ä æ
+  á: q
+  c: č ç
+  d: đ
+  g: ǧ ǥ ǧ
+  i: ï
+  k: ǩ
+  n: ŋ
+  o: õ ø ö
+  s: š
+  t: ŧ
+  z: ǯ ʒ
+  æ: ä
+  ö: ø
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: gasska
+  return: linnjamållsom

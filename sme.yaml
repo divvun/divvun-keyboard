@@ -1,0 +1,66 @@
+internalName: northern_sami_keyboard
+
+displayNames:
+  se: Davvisámegiella
+  en: Northern Sami
+  fi: Pohjoissaame
+  nb: Nordsamisk
+  sv: Nordsamiska
+
+locale: se
+
+modes:
+  mobile-default: |
+    á š e r t y u i o p ŋ
+    a s d f g h j k l đ ŧ
+       ž z č c v b n m
+  mobile-shift: |
+    Á Š E R T Y U I O P Ŋ
+    A S D F G H J K L Đ Ŧ
+       Ž Z Č C V B N M
+
+longpress:
+  A: Á Å Â Ä Æ
+  Á: Q
+  C: Ç
+  Č: X
+  D: Đ
+  G: Ǧ Ǥ 
+  Ǧ: Y
+  I: Ï
+  K: Ǩ
+  N: Ŋ
+  O: Õ Ø Ö
+  Š: W
+  T: Ŧ
+  Z: Ǯ Ʒ
+
+  a: á å â ä æ
+  á: q
+  c: ç
+  č: x
+  d: đ
+  g: ǧ ǥ 
+  ǧ: y
+  i: ï
+  k: ǩ
+  n: ŋ
+  o: õ ø ö
+  š: w
+  t: ŧ
+  z: ǯ ʒ
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: gaska
+  return: linnjámolsun

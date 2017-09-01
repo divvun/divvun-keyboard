@@ -1,0 +1,72 @@
+internalName: skolt_sami_keyboard
+
+displayNames:
+  sms: Nuõrttsää’mǩiõll
+  fi: Koltansaame
+  en: Skolt Sami
+  nb: Skoltesamisk
+  se: Nuortalašsámegiella
+  sv: Skoltsamiska
+
+locale: sms
+
+modes:
+  mobile-default: |
+    â š e r t ǧ u i o p å ʹ
+    a s d f g h j k l ä đ ʼ
+      ž z č c v b n m õ ǩ
+  mobile-shift: |
+    Â Š E R T Ǧ U I O P Å ʹ
+    A S D F G H J K L Ä Đ ʼ
+      Ž Z Č C V B N M Õ Ǩ
+
+longpress:
+  A: Á Å Â Ä Æ
+  Â: Q
+  C: Ç
+  Č: X
+  D: Đ
+  E: Ẹ
+  G: Ǧ Ǥ
+  Ǧ: Y
+  I: Ï
+  K: Ǩ
+  N: Ŋ
+  O: Õ Ø Ö
+  Š: W
+  T: Ŧ
+  Z: Ǯ Ʒ
+
+  a: á å â ä æ
+  â: q
+  c: ç
+  č: x
+  d: đ
+  e: ẹ
+  g: ǧ ǥ
+  ǧ: y
+  i: ï
+  k: ǩ
+  n: ŋ
+  o: õ ø ö
+  š: w
+  t: ŧ
+  z: ʒ ǯ
+
+  ʹ: ˈ
+  ʼ: ˈ
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: kõskk
+  return: riâddvaajtõs

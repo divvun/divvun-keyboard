@@ -1,0 +1,65 @@
+internalName: south_sami_keyboard
+
+displayNames:
+  sma: Åarjelsaemien gïele
+  en: South Sami
+  fi: Eteläsaame
+  nb: Sørsamisk
+  se: Lullisámegiella
+  sv: Sydsamiska
+
+locale: sma
+
+modes:
+  mobile-default: |
+    q w e r t y u i o p å
+    a s d f g h j k l ö æ
+      z x c v b n m ï
+  mobile-shift: |
+    Q W E R T Y U I O P Å
+    A S D F G H J K L Ö Æ
+      Z X C V B N M Ï
+
+longpress:
+  A: Á Å Â Ä Æ
+  C: Č Ç
+  D: Đ
+  G: Ǧ Ǥ Ǧ
+  I: Ï
+  K: Ǩ
+  N: Ŋ
+  O: Õ Ø Ö
+  S: Š
+  T: Ŧ
+  Z: Ǯ Ʒ
+  Æ: Ä
+  Ö: Ø
+
+  a: á å â ä æ
+  c: č ç
+  d: đ
+  g: ǧ ǥ ǧ
+  i: ï
+  k: ǩ
+  n: ŋ
+  o: õ ø ö
+  s: š
+  t: ŧ
+  z: ǯ ʒ
+  æ: ä
+  ö: ø
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: gaskoe
+  return: linjemålsome

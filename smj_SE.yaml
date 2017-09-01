@@ -1,0 +1,66 @@
+internalName: julev_sami_keyboard
+
+displayNames:
+  smj: Julevsámegiella (Svierik)
+  smj_SE: Julevsámegiella (Svierik)
+  en: Julev Sami (Sweden)
+  fi: Julevsaame (Ruotsi)
+  nb: Lulesamisk (Sverige)
+  se: Julevsámegiella (Ruoŧŧa)
+  sv: Lulesamiska (Sverige)
+
+locale: smj_SE
+
+modes:
+  mobile-default: |
+    á w e r t y u i o p å
+    a s d f g h j k l ö ä
+       z x c v b n m ŋ
+  mobile-shift: |
+    Á W E R T Y U I O P Å
+    A S D F G H J K L Ö Ä
+       Z X C V B N M Ŋ
+
+longpress:
+  A: Æ Ä Å Â
+  Á: Q
+  C: Č
+  D: Đ
+  G: Ǧ Ǥ 
+  I: Ï 
+  K: Ǩ
+  O: Ø Ö Õ
+  S: Š
+  T: Ŧ
+  Z: Ž Ǯ Ʒ
+  Ä: Æ
+  Ö: Ø
+
+  a: æ ä å â
+  á: q
+  c: č
+  d: đ
+  g: ǧ ǥ 
+  i: ï 
+  k: ǩ
+  o: ø ö õ
+  s: š
+  t: ŧ
+  z: ž ǯ ʒ
+  ä: æ
+  ö: ø
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: gasska
+  return: linnjamålssom

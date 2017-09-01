@@ -1,0 +1,72 @@
+internalName: swedish_keyboard
+
+displayNames:
+  sv: Svenska
+  en: Swedish
+  fi: Ruotsi
+  nb: Svensk
+  se: Ruoŧagiella
+
+locale: sv
+
+modes:
+  mobile-default: |
+    q w e r t y u i o p å
+    a s d f g h j k l ö ä
+    z x c v b n m 
+  mobile-shift: |
+    Q W E R T Y U I O P Å
+    A S D F G H J K L Ö Ä
+    Z X C V B N M
+
+longpress:
+  A: Æ Ä Å Á À Â Ã Ȧ Ā
+  E:   Ë   É È Ê Ẽ Ė Ē Ĕ Ę
+  I:   Ï   Í Ì Î Ĩ   Ī Ĭ
+  O: Œ Ö   Ó Ò Ô Õ   Ō Ŏ
+  U:   Ü   Ú Ù Û Ũ   Ū Ŭ
+  Y:       Ý Ỳ Ŷ   Ẏ Ȳ
+  Ä: Æ
+  Ö: Ø
+
+  C: Č Ç
+  D: Đ Ð
+  G: Ĝ Ḡ Ǧ Ǥ
+  K: Ǩ
+  N: Ŋ
+  S: Š
+  T: Ŧ Þ
+  Z: Ž Ʒ Ǯ
+
+  a: æ ä å á à â ã ȧ ā
+  e:   ë   é è ê ẽ ė ē ĕ ę
+  i:   ï   í ì î ĩ   ī ĭ
+  o: œ ö   ó ò ô õ   ō ŏ
+  u:   ü   ú ù û ũ   ū ŭ
+  y:       ý ỳ ŷ   ẏ ȳ
+  ä: æ
+  ö: ø
+
+  c: č ç
+  d: đ ð
+  g: ĝ ḡ ǧ ǥ
+  k: ǩ
+  n: ŋ
+  s: š
+  t: ŧ þ
+  z: ž ʒ ǯ
+
+styles:
+  tablet:
+    actions:
+      backspace: [1, right, fill]
+      enter: [2, right, fill]
+      shift: [3, both, fill]
+  phone:
+    actions:
+      shift: [3, left, fill]
+      backspace: [3, right, fill]
+
+strings:
+  space: mellanslag
+  return: retur

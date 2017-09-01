@@ -1,0 +1,39 @@
+internalName: sami_keyboard
+
+locales:
+  en:
+    name: &bundleName "Sami Keyboards"
+    description: "Mobile OS keyboards for the Sámi languages from the Divvun group at UiT."
+  fi:
+    name: "Saamen näppäimistöt"
+    description: "Saamen kielen matkapuhelinnäppäimistöt Tromssan yliopiston Divvun-ryhmältä."
+  nb:
+    name: "Samiske tastaturer"
+    description: "Mobiltastatur for samiske språk fra Divvun-gruppa ved UiT."
+  se:
+    name: "Sámi boallobeavddit"
+    description: "Mobilboallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
+  sv:
+    name: "Samiska tangentbord"
+    description: "Mobiltangentbord för samiska språk från Divvun-gruppen vid UiT."
+
+author: The Divvun Group, UiT Norgga árktalaš universitehta
+email: feedback@divvun.no
+
+layouts: [sma, sme, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
+
+version: "1.0.2"
+build: "14"
+
+targets:
+  android:
+    packageId: no.uit.giella.keyboards.Sami
+    icon: images/Sami-icon.png
+    keyAlias: sami_keyboard
+
+  ios:
+    codeSignId: "iOS Development"
+    provisioningProfileId: "Gïelese distribution"
+    packageId: no.uit.giella.keyboards.Sami
+    icon: images/Sami-icon.png
+    bundleName: *bundleName
