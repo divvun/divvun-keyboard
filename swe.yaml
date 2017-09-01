@@ -1,4 +1,4 @@
-internalName: swedish_keyboard
+internalName: swe
 
 displayNames:
   sv: Svenska
@@ -8,6 +8,8 @@ displayNames:
   se: Ruoŧagiella
 
 locale: sv
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

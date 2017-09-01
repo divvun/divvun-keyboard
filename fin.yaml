@@ -1,4 +1,4 @@
-internalName: finnish_keyboard
+internalName: fin
 
 displayNames:
   fi: Suomi
@@ -8,6 +8,8 @@ displayNames:
   sv: Finska
 
 locale: fi
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

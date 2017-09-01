@@ -1,4 +1,4 @@
-internalName: skolt_sami_keyboard
+internalName: sms
 
 displayNames:
   sms: Nuõrttsää’mǩiõll
@@ -9,6 +9,8 @@ displayNames:
   sv: Skoltsamiska
 
 locale: sms
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

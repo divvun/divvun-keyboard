@@ -1,4 +1,4 @@
-internalName: julev_sami_keyboard
+internalName: smj-NO
 
 displayNames:
   smj: Julevsámegiella (Vuodna)
@@ -10,6 +10,8 @@ displayNames:
   sv: Lulesamiska (Norge)
 
 locale: smj_NO
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

@@ -1,4 +1,4 @@
-internalName: norwegian_keyboard
+internalName: nob
 
 displayNames:
   nb: Norsk bokmål
@@ -8,6 +8,8 @@ displayNames:
   sv: Norskt bokmål
 
 locale: nb
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

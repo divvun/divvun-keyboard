@@ -1,4 +1,4 @@
-internalName: inari_sami_keyboard
+internalName: smn
 
 displayNames:
   smn: Anarâškielâ
@@ -9,6 +9,8 @@ displayNames:
   sv: Enaresamiska
 
 locale: smn
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

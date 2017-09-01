@@ -1,4 +1,4 @@
-internalName: south_sami_keyboard
+internalName: sma
 
 displayNames:
   sma: Åarjelsaemien gïele
@@ -9,6 +9,8 @@ displayNames:
   sv: Sydsamiska
 
 locale: sma
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

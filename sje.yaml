@@ -1,4 +1,4 @@
-internalName: pite_sami_keyboard
+internalName: sje
 
 displayNames:
   sje: Bidumsámegiella
@@ -9,6 +9,8 @@ displayNames:
   sv: Pitesamiska
 
 locale: sje
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |

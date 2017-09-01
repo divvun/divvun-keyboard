@@ -1,4 +1,4 @@
-internalName: northern_sami_keyboard
+internalName: sme
 
 displayNames:
   se: Davvisámegiella
@@ -8,6 +8,8 @@ displayNames:
   sv: Nordsamiska
 
 locale: se
+
+supportedTargets: [ios, android]
 
 modes:
   mobile-default: |
