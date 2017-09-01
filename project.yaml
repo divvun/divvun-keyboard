@@ -1,4 +1,4 @@
-internalName: sami_keyboard
+internalName: Sami
 
 locales:
   en:
@@ -20,6 +20,9 @@ locales:
 author: The Divvun Group, UiT Norgga árktalaš universitehta
 email: feedback@divvun.no
 
+copyright: (c) 2017 Divvun/Giellatekno/UiT
+organisation: UiT Norgga árktalaš universitehta
+
 layouts: [sma, sme, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
 
 version: "1.0.2"
@@ -29,11 +32,12 @@ targets:
   android:
     packageId: no.uit.giella.keyboards.Sami
     icon: images/Sami-icon.png
+    keyStore: $GTPRIV/admin/dev-accounts/dev_keys/sami_keyboard.keystore
     keyAlias: sami_keyboard
 
   ios:
-    codeSignId: "iOS Development"
+    codeSignId: "Developer ID Installer: The University of Tromso (2K5J2584NX)"
     provisioningProfileId: "Gïelese distribution"
-    packageId: no.uit.giella.keyboards.Sami
+    packageId: no.uit.giella
     icon: images/Sami-icon.png
     bundleName: *bundleName
