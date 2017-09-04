@@ -15,19 +15,19 @@ modes:
   mobile-default: |
     q w e r t y u i o p å
     a s d f g h j k l ö ä
-    z x c v b n m 
+        z x c v b n m 
   mobile-shift: |
     Q W E R T Y U I O P Å
     A S D F G H J K L Ö Ä
-    Z X C V B N M
+        Z X C V B N M
 
 longpress:
-  A: Æ Ä Å Á À Â Ã Ȧ Ā
-  E:   Ë   É È Ê Ẽ Ė Ē Ĕ Ę
-  I:   Ï   Í Ì Î Ĩ   Ī Ĭ
-  O: Œ Ö   Ó Ò Ô Õ   Ō Ŏ
-  U:   Ü   Ú Ù Û Ũ   Ū Ŭ
-  Y:       Ý Ỳ Ŷ   Ẏ Ȳ
+  A:     Á À Â Ã
+  E:   Ë É È Ê Ẽ
+  I:   Ï Í Ì Î Ĩ
+  O: Œ Ö Ó Ò Ô Õ
+  U:   Ü Ú Ù Û Ũ
+  Y:   Ÿ Ý Ỳ Ŷ
   Ä: Æ
   Ö: Ø
 
@@ -40,12 +40,12 @@ longpress:
   T: Ŧ Þ
   Z: Ž Ʒ Ǯ
 
-  a: æ ä å á à â ã ȧ ā
-  e:   ë   é è ê ẽ ė ē ĕ ę
-  i:   ï   í ì î ĩ   ī ĭ
-  o: œ ö   ó ò ô õ   ō ŏ
-  u:   ü   ú ù û ũ   ū ŭ
-  y:       ý ỳ ŷ   ẏ ȳ
+  a:     á à â ã
+  e:   ë é è ê ẽ
+  i:   ï í ì î ĩ
+  o: œ ö ó ò ô õ
+  u:   ü ú ù û ũ
+  y:   ÿ ý ỳ ŷ
   ä: æ
   ö: ø
 
