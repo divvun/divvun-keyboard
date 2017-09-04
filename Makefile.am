@@ -10,7 +10,7 @@ IOS_IME=giellakbd-ios
 ANDROID_IME=giella-ime
 SOFTKBDGEN=kbdgen
 DIVVUN_GITHUB=https://github.com/divvun
-# RELEASE=-R
+RELEASE=-R
 
 # XML_SRC can be a language code or the full xml file name, both given
 # by the user
