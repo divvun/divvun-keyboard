@@ -26,7 +26,7 @@ organisation: UiT Norgga árktalaš universitehta
 layouts: [sme, sma, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
 
 version: "1.1.2"
-build: "17"
+build: "18"
 
 targets:
   android:
