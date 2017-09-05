@@ -1,4 +1,4 @@
-internalName: sme
+internalName: northern_sami_keyboard
 
 displayNames:
   se: Davvisámegiella
@@ -23,7 +23,7 @@ modes:
 
 longpress:
   Á: Q
-  A: Æ Ä Á À Â Ã Ạ
+  A: Æ Ä Á À Â Ã Ạ Å
   E:   Ë É È Ê Ẽ Ẹ
   I:   Ï Í Ì Î Ĩ Ị
   O: Ø Ö Ó Ò Ô Õ Ọ
@@ -43,7 +43,7 @@ longpress:
   Z: Ʒ Ǯ
 
   á: q
-  a: æ ä á à â ã ạ
+  a: æ ä á à â ã ạ å
   e:   ë é è ê ẽ ẹ
   i:   ï í ì î ĩ ị
   o: ø ö ó ò ô õ ọ

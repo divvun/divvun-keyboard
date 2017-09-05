@@ -1,4 +1,4 @@
-internalName: Sami
+internalName: sami_keyboard
 
 locales:
   en:
@@ -23,10 +23,10 @@ email: feedback@divvun.no
 copyright: (c) 2017 Divvun/Giellatekno/UiT
 organisation: UiT Norgga árktalaš universitehta
 
-layouts: [sma, sme, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
+layouts: [sme, sma, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
 
-version: "1.1.1"
-build: "16"
+version: "1.1.2"
+build: "17"
 
 targets:
   android:

@@ -1,4 +1,4 @@
-internalName: smn
+internalName: inari_sami_keyboard
 
 displayNames:
   smn: Anarâškielâ
@@ -24,7 +24,7 @@ modes:
 
 longpress:
   Á: Q
-  A:     Á À Â Ã Ạ
+  A: Å   Á À Â Ã Ạ
   E:   Ë É È Ê Ẽ Ẹ
   I:   Ï Í Ì Î Ĩ Ị
   O: Ø Ö Ó Ò Ô Õ Ọ
@@ -45,7 +45,7 @@ longpress:
   Ž: Ǯ
 
   á: q
-  a:     á à â ã ạ
+  a: å   á à â ã ạ
   e:   ë é è ê ẽ ẹ
   i:   ï í ì î ĩ ị
   o: ø ö ó ò ô õ ọ
