@@ -25,8 +25,8 @@ organisation: UiT Norgga árktalaš universitehta
 
 layouts: [sme, sma, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
 
-version: "1.1.2"
-build: "18"
+version: "1.2.0"
+build: "21"
 
 targets:
   android:
@@ -37,7 +37,7 @@ targets:
 
   ios:
     codeSignId: "Developer ID Installer: The University of Tromso (2K5J2584NX)"
-    provisioningProfileId: "Gïelese distribution"
+    provisioningProfileId: 'match Development no.uit.giella.keyboards.Sami'
     packageId: no.uit.giella
     icon: images/Sami-icon.png
     bundleName: *bundleName
