@@ -12,6 +12,10 @@ locale: sms
 
 supportedTargets: [ios, android]
 
+targets:
+  android:
+    minimumSdk: 20
+
 modes:
   mobile-default: |
     â š e r t ǧ u i o p å ʹ
