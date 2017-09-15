@@ -1,4 +1,8 @@
-$Revision: 156432 $
+$Revision: 157114 $
+Much simplified makefile: kbdgen is now taken from giella-core, and the other
+external dependencies are all handled by kbdgen. Life is much simpler :-)
+
+r156432:
 Removed old and irrelevant check that now blocks building Android keyboards.
 
 r154209:

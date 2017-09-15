@@ -4,12 +4,8 @@
 
 EXTRA_DIST = und.timestamp
 
-IOS_AUTOTOOLS=ios-autotools
-IOS_AUTOTOOLS_PATH=$(shell echo $$(pwd)/deps/$(IOS_AUTOTOOLS))
-IOS_IME=giellakbd-ios
-ANDROID_IME=giella-ime
-SOFTKBDGEN=kbdgen
-DIVVUN_GITHUB=https://github.com/divvun
+KBDGEN=kbdgen
+KBDGENPATH=$(GIELLA_CORE)/$(KBDGEN)
 RELEASE=-R
 
 # XML_SRC can be a language code or the full xml file name, both given
@@ -47,107 +43,69 @@ endif
 
 all-local: desktop
 
-.PHONY: ios_deps android_deps gen_deps mobile ios android \
-        desktop svg osx win x11 draft
-
-ios_deps:
-	@echo
-	@echo "*** iOS build tool dependency check! ***"
-	@echo
-	$(MKDIR_P) deps
-	cd deps; \
-	if ! [ -d $(IOS_AUTOTOOLS) ]; then\
-		git clone https://github.com/bbqsrc/$(IOS_AUTOTOOLS).git ; \
-	fi ; \
-	cd $(IOS_AUTOTOOLS)/ && git pull --all && cd ../ ;
-
-android_deps:
-	@echo
-	@echo "*** Android build tool dependency check! ***"
-	@echo
-	$(MKDIR_P) deps
-	cd deps; \
-	if ! [ -d $(ANDROID_IME) ]; then\
-		git clone $(DIVVUN_GITHUB)/$(ANDROID_IME).git ; \
-	fi ; \
-	cd $(ANDROID_IME)/ && git pull --all
-
-gen_deps:
-	@echo
-	@echo "*** General build tool dependency check! ***"
-	@echo
-	$(MKDIR_P) deps
-	cd deps; \
-	if ! [ -d $(SOFTKBDGEN) ]; then\
-		git clone $(DIVVUN_GITHUB)/$(SOFTKBDGEN).git ; \
-	fi ; \
-	cd $(SOFTKBDGEN)/ && git pull --all
+.PHONY: mobile ios android desktop svg osx win x11 draft
 
 mobile: ios android
 
-ios: gen_deps ios_deps
+ios:
 	@echo
 	@echo "*** iOS build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	PATH=$(IOS_AUTOTOOLS_PATH):$(PATH) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t ios \
-		-o $(PWD)/ios \
-		-r $(DIVVUN_GITHUB)/$(IOS_IME).git $(RELEASE) \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t ios \
+		-o ios $(RELEASE) \
 		project.yaml
 
-android: gen_deps android_deps
+android:
 	@echo
 	@echo "*** Android build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t android \
-		-o android \
-		-r deps/$(ANDROID_IME) -b master $(RELEASE) \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t android \
+		-o android $(RELEASE) \
 		project.yaml \
 		-K targets.android.keyStore=$(GTPRIV)/admin/dev-accounts/dev_keys/sami_keyboard.keystore
 
 desktop: svg osx win x11
 
-osx: gen_deps
+osx:
 	@echo
 	@echo "*** OSX build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t osx \
-		-o macos \
-		$(RELEASE) \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t osx \
+		-o macos $(RELEASE) \
 		project.yaml
 
-svg: gen_deps
+svg:
 	@echo
 	@echo "*** SVG build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t svg \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t svg \
 		-o doc \
 		project.yaml
 
-win: gen_deps
+win:
 	@echo
 	@echo "*** Windows build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t win $(RELEASE) \
-		-o win \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t win \
+		-o win $(RELEASE) \
 		project.yaml
 
-x11: gen_deps
+x11:
 	@echo
 	@echo "*** X11 build! ***"
 	@echo
-	PYTHONPATH=deps/$(SOFTKBDGEN) \
-	$(PYTHON) -m $(SOFTKBDGEN) -t x11 \
+	PYTHONPATH=$(KBDGENPATH) \
+	$(PYTHON) -m $(KBDGEN) -t x11 \
 		-o linux \
 		project.yaml
 
 draft: $(GTLANG)-draft.yaml
-$(GTLANG)-draft.yaml: gen_deps
+$(GTLANG)-draft.yaml:
 	@echo
 	@echo "*** Building draft keyboard yaml file based on: ***"
 	@echo "*** $(GIELLA_TEMPLATES)/keyboards-templates/cldr/keyboards/$(CLDR_SRC)"
@@ -155,7 +113,7 @@ $(GTLANG)-draft.yaml: gen_deps
 	@if [[ -f \
 	"$(GIELLA_TEMPLATES)/keyboards-templates/cldr/keyboards/$(CLDR_SRC)" ]] ; \
 		then \
-		PYTHONPATH=deps/$(SOFTKBDGEN) \
+		PYTHONPATH=$(KBDGENPATH) \
 		$(PYTHON) -m kbdgen.cldr cldr2kbdgen \
 		$(GIELLA_TEMPLATES)/keyboards-templates/cldr/keyboards/$(CLDR_SRC) \
 		$@ ; \
@@ -176,4 +134,8 @@ $(GTLANG)-draft.yaml: gen_deps
 	fi
 
 clean-local:
-	-rm -rf *.txt build deps
+	-rm -rf *.txt
+
+maintainer-clean-local:
+	-rm -rf ~/Library/Caches/kbdgen/
+	-rm -rf ~/.cache/kbdgen
