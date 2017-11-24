@@ -1,4 +1,8 @@
-$Revision: 157114 $
+$Revision: 160455 $
+Renamed the keyboard layout template file to only cover mobile layouts, added
+new template files for desktop systems. Updated the project file accordingly.
+
+r157114:
 Much simplified makefile: kbdgen is now taken from giella-core, and the other
 external dependencies are all handled by kbdgen. Life is much simpler :-)
 
