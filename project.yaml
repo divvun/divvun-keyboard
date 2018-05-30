@@ -25,6 +25,9 @@ organisation: UiT Norgga árktalaš universitehta
 
 layouts: [sme, sma, smj_NO, smj_SE, smn, sms, sje, nob, swe, fin]
 
+version: "1.0"
+build: "1"
+
 targets:
   android:
     packageId: no.uit.giella.keyboards.Sami
