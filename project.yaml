@@ -42,4 +42,4 @@ targets:
     icon: images/Sami-icon.png
     bundleName: *bundleName
     version: "1.2.2"
-    build: "26"
+    build: "27"
