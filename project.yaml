@@ -44,5 +44,6 @@ targets:
     packageId: no.uit.giella.keyboards.Sami
     icon: images/Sami-icon.png
     bundleName: *bundleName
+    aboutDir: aboutFiles
     version: "1.2.2"
     build: "28"
