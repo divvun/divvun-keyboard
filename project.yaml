@@ -13,9 +13,6 @@ locales:
   nn:
     name: "Samiske tastatur"
     description: "Mobiltastatur for samiske språk frå Divvun-gruppa ved UiT."
-  no:
-    name: "Samiske tastaturer"
-    description: "Mobiltastaturer for samiske språk fra Divvun-gruppa ved UiT."
   se:
     name: "Sámi boallobeavddit"
     description: "Mobilboallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
