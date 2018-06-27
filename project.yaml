@@ -50,4 +50,4 @@ targets:
     aboutDir: aboutFiles
     sentryDsn: https://54df221153d64545b02ff3a98d616c83@sentry.io/1227106
     version: "1.2.2"
-    build: "33"
+    build: "34"
