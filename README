@@ -15,7 +15,7 @@ file INSTALL.
 Documentation is scattered around on the Giellatekno and Divvun pages, e.g.:
 
 * http://giellatekno.uit.no/__UND__doc/index.html
-* http://divvun.no/doc/tools/docu-__UND__-manual.html
+* https://giellalt.uit.no/tools/docu-__UND__-manual.html
 
 The keyboards will be submitted to the CLDR - Unicode Common Locale Data
 Repository, where they will be available for OS developers to be included. Where
@@ -33,7 +33,7 @@ Downloading
 -----------
 
 The __UNDEFINED__ keyboard sources can be acquired using the `Giella SVN
-repository <http://divvun.no/doc/infra/anonymous-svn.html>`_, from the
+repository <https://giellalt.uit.no/infra/anonymous-svn.html>`_, from the
 language specific directory for keyboards, after the core has been downloaded
 and initial setup has been performed.
 
