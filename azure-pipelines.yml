@@ -1,0 +1,20 @@
+trigger:
+- chrome
+#- master
+
+resources:
+  repositories:
+    - repository: templates
+      type: GitHub
+      name: divvun/divvun-ci-config
+      endpoint: divvun-ci
+
+jobs:
+  - template: repo/templates/keyboards.yml@templates
+    parameters:
+      name: smi
+      packageName: keyboard-smi
+      kbdgenFolder: "smi.kbdgen"
+      repositoryWin: "https://pahkat.uit.no/repo/windows"
+      repositoryMac: "https://pahkat.uit.no/repo/macos"
+      languages: []
