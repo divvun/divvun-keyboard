@@ -1,0 +1,50 @@
+displayNames:
+  sma: Åarjelsaemien gïele
+  en: South Sami
+  fi: Eteläsaame
+  nb: Sørsamisk
+  'no': Sørsamisk (Sverige)
+  nn: Sørsamisk (Sverige)
+  da: Sydsamisk (Sverige)
+  se: Lullisámegiella
+  sv: Sydsamiska
+modes:
+  mobile:
+    default: |
+      q w e r t y u i o p å
+      a s d f g h j k l ö æ
+        z x c v b n m ï
+    shift: |
+      Q W E R T Y U I O P Å
+      A S D F G H J K L Ö Æ
+        Z X C V B N M Ï
+longpress:
+  A: Á Å Â Ä Æ
+  C: Č Ç
+  D: Đ
+  G: Ǧ Ǥ
+  I: Ï
+  K: Ǩ
+  'N': Ŋ
+  O: Õ Ø Ö
+  S: Š
+  T: Ŧ
+  Z: Ž Ʒ Ǯ
+  Æ: Ä
+  Ö: Ø
+  a: á å â ä æ
+  c: č ç
+  d: đ
+  g: ǧ ǥ
+  i: ï
+  k: ǩ
+  'n': ŋ
+  o: õ ø ö
+  s: š
+  t: ŧ
+  z: ž ʒ ǯ
+  æ: ä
+  ö: ø
+strings:
+  space: gaskoe
+  return: linjemålsome
