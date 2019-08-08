@@ -1,22 +1,25 @@
 locales:
   en:
     name: "Sami Keyboards"
-    description: "Mobile OS keyboards for the Sámi languages from the Divvun group at UiT."
+    description: "Keyboards for the Sámi languages from the Divvun group at UiT."
   fi:
     name: "Saamen näppäimistöt"
-    description: "Saamen kielen matkapuhelinnäppäimistöt Tromssan yliopiston Divvun-ryhmältä."
+    description: "Saamen kielen näppäimistöt Tromssan yliopiston Divvun-ryhmältä."
+  'no':
+    name: "Samiske tastaturer"
+    description: "Tastatur for samiske språk fra Divvun-gruppa ved UiT."
   nb:
     name: "Samiske tastaturer"
-    description: "Mobiltastatur for samiske språk fra Divvun-gruppa ved UiT."
+    description: "Tastatur for samiske språk fra Divvun-gruppa ved UiT."
   nn:
     name: "Samiske tastatur"
-    description: "Mobiltastatur for samiske språk frå Divvun-gruppa ved UiT."
+    description: "Tastatur for samiske språk frå Divvun-gruppa ved UiT."
   se:
     name: "Sámi boallobeavddit"
-    description: "Mobilboallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
+    description: "Boallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
   sv:
     name: "Samiska tangentbord"
-    description: "Mobiltangentbord för samiska språk från Divvun-gruppen vid UiT."
+    description: "Tangentbord för samiska språk från Divvun-gruppen vid UiT."
 
 author: The Divvun Group, UiT Norgga árktalaš universitehta
 email: feedback@divvun.no
