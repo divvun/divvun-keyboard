@@ -49,5 +49,5 @@ targets:
     bundleName: *bundleName
     aboutDir: aboutFiles
     sentryDsn: https://54df221153d64545b02ff3a98d616c83@sentry.io/1227106
-    version: "1.2.2"
+    version: "1.2.3"
     build: "35"
