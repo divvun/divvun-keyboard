@@ -2,6 +2,6 @@ codeSignId: "iPhone Distribution: The University of Tromso (2K5J2584NX)"
 teamId: 2K5J2584NX
 packageId: no.uit.giella.keyboards.Sami
 bundleName: Sami Keyboards
-version: 0.1.0
-build: 1
+version: 2.1.0
+build: 200
 bhfst: true
