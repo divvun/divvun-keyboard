@@ -758,6 +758,8 @@ deadKeys:
     alt: [¨, '~']
     alt+shift: [^, ´]
 targets:
+  ios:
+    legacyName: julev_sami_keyboard_no
   win:
     locale: smj-Latn-NO
   chrome:

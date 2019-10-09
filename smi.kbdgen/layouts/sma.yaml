@@ -48,3 +48,6 @@ longpress:
 strings:
   space: gaskoe
   return: linjemålsome
+targets:
+  ios:
+    legacyName: south_sami_keyboard

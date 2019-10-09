@@ -558,6 +558,8 @@ deadKeys:
     alt: ['~', ´, ^]
     alt+shift: ['`', .]
 targets:
+  ios:
+    legacyName: skolt_sami_keyboard
   win:
     locale: sms-Latn-FI
     id: smswi

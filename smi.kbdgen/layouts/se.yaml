@@ -45,4 +45,7 @@ longpress:
   z: ǯ ʒ
 strings:
   space: gaska
-  return: linnjámolsun
+  return: "linnjá\u00ADmolsun"
+targets:
+  ios:
+    legacyName: northern_sami_keyboard
