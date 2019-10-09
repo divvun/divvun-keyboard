@@ -1,6 +1,5 @@
 trigger:
-- chrome
-#- master
+- master
 
 resources:
   repositories:
