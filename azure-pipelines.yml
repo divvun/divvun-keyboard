@@ -16,4 +16,16 @@ jobs:
       kbdgenFolder: "smi.kbdgen"
       repositoryWin: "https://pahkat.uit.no/repo/windows"
       repositoryMac: "https://pahkat.uit.no/repo/macos"
-      languages: []
+      languages:
+        - projectjjName: giella-sme
+          path: usr/share/giella/mobilespellers/se-mobile.zhfst
+          name: se
+        - projectjjName: giella-sma
+          path: usr/share/giella/mobilespellers/sma-mobile.zhfst
+          name: sma
+        - projectjjName: giella-sms
+          path: usr/share/giella/mobilespellers/sms-mobile.zhfst
+          name: sms
+        - projectjjName: giella-smn
+          path: usr/share/giella/mobilespellers/smn-mobile.zhfst
+          name: smn
