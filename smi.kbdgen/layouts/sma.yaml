@@ -46,7 +46,7 @@ longpress:
   æ: ä
   ö: ø
 strings:
-  space: gaskoe
+  space: væhtagaske
   return: linjemålsome
 targets:
   ios:
