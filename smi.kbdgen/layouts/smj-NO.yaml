@@ -733,7 +733,7 @@ longpress:
   ø: ö
 strings:
   space: gasska
-  return: linnjamålssom
+  return: linnja\u00ADmålssom
 space:
   mac:
     caps: '\u{A0}'

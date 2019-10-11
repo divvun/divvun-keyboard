@@ -47,7 +47,7 @@ longpress:
   ö: ø
 strings:
   space: væhtagaske
-  return: linje­målsome
+  return: linje\u00ADm­målsome
 targets:
   ios:
     legacyName: south_sami_keyboard

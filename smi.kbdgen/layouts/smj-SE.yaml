@@ -276,7 +276,7 @@ longpress:
   ö: ø
 strings:
   space: gasska
-  return: linnjamålssom
+  return: linnja\u00ADmålssom
 space:
   mac:
     alt: '\u{A0}'

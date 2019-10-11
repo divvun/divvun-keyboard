@@ -538,7 +538,7 @@ longpress:
   ʼ: ˈ
 strings:
   space: kõskk
-  return: riâddvaajtõs
+  return: riâdd\u00ADvaajtõs
 space:
   mac:
     caps: '\u{A0}'
