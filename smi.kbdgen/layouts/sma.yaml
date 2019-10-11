@@ -57,7 +57,7 @@ longpress:
 
 strings:
   space: væhtagaske
-  return: linje\u00ADm­målsome
+  return: "linje\u00AD­målsome"
 targets:
   ios:
     legacyName: south_sami_keyboard
