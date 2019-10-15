@@ -1,4 +1,4 @@
-packageId: no.uit.giella.keyboards.smi
+packageId: no.uit.giella.keyboards.Sami
 keyAlias: sami_keyboard
 sentryDsn: "https://655b664788b4431eb9ad1b16c1fb38a6:70aa8ee35cbf46e7b1db726b59a2122e@sentry.io/213983"
 version: 1.3.0
