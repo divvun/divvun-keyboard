@@ -13,6 +13,7 @@ jobs:
     parameters:
       name: smi
       packageName: keyboard-smi
+      androidKeyAlias: sami_keyboard
       kbdgenFolder: "smi.kbdgen"
       repositoryWin: "https://pahkat.uit.no/repo/windows"
       repositoryMac: "https://pahkat.uit.no/repo/macos"
