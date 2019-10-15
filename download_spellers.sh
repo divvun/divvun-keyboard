@@ -1,7 +1,7 @@
 if [[ `uname` == "Darwin" ]]; then
-  wget -qc https://x.brendan.so/thfst-tools_macos -o thfst-tools
+  wget -qc https://x.brendan.so/thfst-tools_macos -O thfst-tools
 else
-  wget -qc https://x.brendan.so/thfst-tools_linux -o thfst-tools
+  wget -qc https://x.brendan.so/thfst-tools_linux -O thfst-tools
 fi
 
 chmod +x ./thfst-tools
