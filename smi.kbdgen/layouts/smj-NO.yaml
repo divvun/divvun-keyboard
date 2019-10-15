@@ -760,6 +760,8 @@ deadKeys:
 targets:
   ios:
     legacyName: julev_sami_keyboard_no
+  android:
+    legacyName: julev_sami_keyboard_no
   win:
     locale: smj-Latn-NO
   chrome:

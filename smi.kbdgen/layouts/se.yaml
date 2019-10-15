@@ -49,3 +49,5 @@ strings:
 targets:
   ios:
     legacyName: northern_sami_keyboard
+  android:
+    legacyName: northern_sami_keyboard

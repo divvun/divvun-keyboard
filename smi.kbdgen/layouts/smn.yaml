@@ -710,6 +710,8 @@ deadKeys:
 targets:
   ios:
     legacyName: inari_sami_keyboard
+  android:
+    legacyName: inari_sami_keyboard
   win:
     locale: smn-Latn
     languageName: Anarâškielâ

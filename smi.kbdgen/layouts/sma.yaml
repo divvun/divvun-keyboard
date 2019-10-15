@@ -61,3 +61,5 @@ strings:
 targets:
   ios:
     legacyName: south_sami_keyboard
+  android:
+    legacyName: south_sami_keyboard
