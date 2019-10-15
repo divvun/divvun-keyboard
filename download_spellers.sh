@@ -1,6 +1,10 @@
-wget -qc https://x.brendan.so/thfst-tools_macos
-chmod +x ./thfst-tools_macos
+if [[ `uname` == "Darwin" ]]; then
+  wget -qc https://x.brendan.so/thfst-tools_macos -o thfst-tools
+else
+  wget -qc https://x.brendan.so/thfst-tools_linux -o thfst-tools
+fi
 
+chmod +x ./thfst-tools
 mkdir -p tmp-download
 pushd tmp-download
 echo sma
@@ -33,7 +37,7 @@ rm -r tmp-download
 ls *.zhfst
 
 for f in *.zhfst; do
-  ./thfst-tools_macos zhfst-to-bhfst $f
+  ./thfst-tools zhfst-to-bhfst $f
   rm $f
 done
 
