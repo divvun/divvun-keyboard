@@ -1,25 +1,23 @@
-internalName: finnish_keyboard
-
 displayNames:
   fi: Suomi
   en: Finnish
+  da: Finsk
   nb: Finsk
+  'no': Finsk
+  nn: Finsk
   se: Suomagiella
   sv: Finska
 
-locale: fi
-
-supportedTargets: [ios, android]
-
 modes:
-  mobile-default: |
-    q w e r t y u i o p å
-    a s d f g h j k l ö ä
-        z x c v b n m
-  mobile-shift: |
-    Q W E R T Y U I O P Å
-    A S D F G H J K L Ö Ä
-        Z X C V B N M
+  mobile:
+    default: |
+      q w e r t y u i o p å
+      a s d f g h j k l ö ä
+          z x c v b n m
+    shift: |
+      Q W E R T Y U I O P Å
+      A S D F G H J K L Ö Ä
+          Z X C V B N M
 
 longpress:
   A:     Á À Â Ã
@@ -58,17 +56,11 @@ longpress:
   t: ŧ þ
   z: ž ʒ ǯ
 
-styles:
-  tablet:
-    actions:
-      backspace: [1, right, fill]
-      enter: [2, right, fill]
-      shift: [3, both, fill]
-  phone:
-    actions:
-      shift: [3, left, fill]
-      backspace: [3, right, fill]
-
 strings:
   space: väli
-  return: rivinvaihto
+  return: "rivin\u00AD­vaihto"
+targets:
+  ios:
+    legacyName: finnish_keyboard
+  android:
+    legacyName: finnish_keyboard
