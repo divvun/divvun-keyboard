@@ -4,5 +4,5 @@ packageId: no.uit.giella.keyboards.Sami
 bundleName: Sami Keyboards
 sentryDsn: https://54df221153d64545b02ff3a98d616c83@sentry.io/1227106
 version: 2.2.0
-build: 204
+build: 205
 bhfst: true

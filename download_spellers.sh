@@ -37,8 +37,8 @@ rm -r tmp-download
 ls *.zhfst
 
 for f in *.zhfst; do
-  ./thfst-tools zhfst-to-bhfst $f
-  rm $f
+ ./thfst-tools zhfst-to-bhfst $f
+ rm $f
 done
 
 ls *.bhfst
