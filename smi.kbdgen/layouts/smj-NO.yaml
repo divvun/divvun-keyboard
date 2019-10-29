@@ -14,11 +14,11 @@ modes:
     default: |
       á w e r t y u i o p å
       a s d f g h j k l ø æ
-         z x c v b n m ŋ
+      \s{shift:1.25} \s{spacer:0.25} z x c v b n m ŋ \s{spacer:0.25} \s{backspace:1.25}
     shift: |
       Á W E R T Y U I O P Å
       A S D F G H J K L Ø Æ
-         Z X C V B N M Ŋ
+      \s{shift:1.25} \s{spacer:0.25} Z X C V B N M Ŋ \s{spacer:0.25} \s{backspace:1.25}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0
       - / : ; ( ) kr & @ "
@@ -27,6 +27,49 @@ modes:
       [ ] { } # % ^ * + =
       _ \ | ~ < > € $ £ •
       \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
+  ipad-9in:
+    default: |
+      \s{"`":0.75} á w e r t y u i o p å \s{backspace:1.25}
+      \s{shift}    a s d f g h j k l ø æ \s{shift}
+      \s{spacer:0.5} z x c v b n m ŋ \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+    shift: |
+      \s{"`":0.75} Á W E R T Y U I O P Å \s{backspace:1.25}
+      \s{shift}    A S D F G H J K L Ø Æ \s{shift}
+      \s{spacer:0.5} Z X C V B N M Ŋ \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+    alt: |
+      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 + \s{backspace:1.25}
+      \s{shift}    % # € & * ( ) ' " ö ä \s{shift}
+      \s{spacer:0.5} % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+    alt+shift: |
+      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 + \s{backspace:1.25}
+      \s{shift}    % # € & * ( ) ' " Ö Ä \s{shift}
+      \s{spacer:0.5} % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+    symbols-1: |
+      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
+      \s{shiftSymbols} @ # kr & * ( ) ' " + • \s{shiftSymbols}
+      \s{spacer:1.5}   % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+    symbols-2: |
+      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.25}
+      \s{shiftSymbols} € $ £ ^ [ ] { } — ° … \s{shiftSymbols}
+      \s{spacer:1.5}   § | ~ ≠ \ < > ! ? \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+  ipad-12in:
+    default: |
+      ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
+      \s{spacer:1.5} á w e r t y u i o p å ŋ
+      \s{caps:1.75}  a s d f g h j k l ø æ \s{return:1.75}
+      \s{shift:1.25}  z x c v b n m \s{comma} \s{fullstop} - \s{shift:2.75}
+    shift: |
+      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5} Á W E R T Y U I O P Å Ŋ
+      \s{caps:1.75}  A S D F G H J K L Ø Æ \s{return:1.75}
+      \s{shift:1.25}  Z X C V B N M ; : _ \s{shift:2.75}
+    alt: |
+      § ! " # kr % & / ( ) = ? `
+    symbols-1: |
+      ` 1 2 3 4 5 6 7 8 9 0 < > \s{backspace:1.5}
+      \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
+      \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
+      \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
   mac:
     default: |
       ' 1 2 3 4 5 6 7 8 9 0 + ´
