@@ -12,11 +12,11 @@ modes:
     default: |
       â š e r t ǧ u i o p å ʹ
       a s d f g h j k l ä đ ʼ
-      \s{shift:1.25} \s{spacer:0.25} ž z č c v b n m õ ǩ \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift:1.25} ž z č c v b n m õ ǩ  \s{backspace:1.25}
     shift: |
       Â Š E R T Ǧ U I O P Å ʹ
       A S D F G H J K L Ä Đ ʼ
-      \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M Õ Ǩ \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift:1.25} Ž Z Č C V B N M Õ Ǩ \s{backspace:1.25}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0
       - / : ; ( ) kr & @ "
