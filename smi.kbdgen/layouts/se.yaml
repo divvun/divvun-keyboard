@@ -56,12 +56,12 @@ modes:
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
       \s{spacer:1.5} á š e r t y u i o p å ŋ đ
       \s{caps:1.75} a s d f g h j k l ø æ \s{return:1.75}
-      \s{shift:1.25} ž z č c v b n m \s{comma} \s{fullstop} - \s{shift:2.75}
+      \s{shift:1.25} ž z č c v b n m \s{comma} \s{fullstop} - \s{shift:2.25}
     shift: |
       § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
       \s{spacer:1.5} Á Š E R T Y U I O P Å Ŋ Đ
       \s{caps:1.75} A S D F G H J K L Ø Æ \s{return:1.75}
-      \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.75}
+      \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.25}
     alt: |
       § ! " # kr % & / ( ) = ? `
     symbols-1: |
