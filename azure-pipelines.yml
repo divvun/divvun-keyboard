@@ -30,3 +30,6 @@ jobs:
         - projectjjName: giella-smn
           path: usr/share/giella/mobilespellers/smn-mobile.zhfst
           name: smn
+        - projectjjName: giella-smj
+          path: usr/share/giella/mobilespellers/smj-mobile.zhfst
+          name: smj
