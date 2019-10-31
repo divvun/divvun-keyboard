@@ -54,62 +54,173 @@ modes:
   ipad-12in:
     default: |
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
-      \s{spacer:1.5} q w e r t y u i o p å ï @
-      \s{caps:1.75} a s d f g h j k l ö æ \s{return:1.75}
-      \s{shift:1.25} z x c v b n m \s{comma} \s{fullstop} - \s{shift:2.75}
+      \s{spacer:1.5}  q w e r t y u i o p å ï @
+      \s{caps:1.75}   a s d f g h j k l ö æ \s{return:1.75}
+      \s{shift:1.25} < z x c v b n m \s{comma} \s{fullstop} - \s{shift:2.25}
     shift: |
       § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
-      \s{spacer:1.5} Q W E R T Y U I O P Å Ï *
-      \s{caps:1.75} A S D F G H J K L Ö Æ \s{return:1.75}
-      \s{shift:1.25} Z X C V B N M ; : _ \s{shift:2.75}
+      \s{spacer:1.5}  Q W E R T Y U I O P Å Ï *
+      \s{caps:1.75}   A S D F G H J K L Ö Æ \s{return:1.75}
+      \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     alt: |
       § ! " # kr % & / ( ) = ? `
     symbols-1: |
-      ` 1 2 3 4 5 6 7 8 9 0 < > \s{backspace:1.5}
+      ` 1 2 3 4 5 6 7 8 9 0 ¨ ^ \s{backspace:1.5}
       \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
       \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
       \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
+
 deadKeys:
   ipad-12in:
-    default: [´,¨]
-    shift: ['`', ^]
-    caps: [´, ¨]
+    default:   [ ´ ]
+    shift:     ['`']
+    symbols-1: [^, ¨]
+
 longpress:
-  A:   Ä Á À Â Ã Ạ
-  E:   Ë É È Ê Ẽ Ẹ
-  I:   Ï Í Ì Î Ĩ Ị
-  O: Ø Ö Ó Ò Ô Õ Ọ
-  U:   Ü Ú Ù Û Ũ Ụ
-  Y:   Ÿ Ý Ỳ Ŷ
+  A:   Ä Á À Â Ã Ā Ạ Å
+  E:   Ë É È Ê Ẽ Ē Ẹ Ė Ǝ
+  I:   Ï Í Ì Î Ĩ Ī Ị I
+  O: Ø Ö Ó Ò Ô Õ Ō Ọ Ȯ Ő Œ
+  U:   Ü Ú Ù Û Ũ Ū Ụ Ů
+  Y:   Ÿ Ý Ỳ Ŷ Ỹ Ȳ Ẏ Y̊ Ɏ
   Æ: Ä
   Ö: Ø
 
-  C: Č Ç
-  D: Đ
-  G: Ǧ Ǥ Ǧ
-  K: Ǩ
-  N: Ŋ Ñ
-  S: Š
-  T: Ŧ
+  C: Č Ç Ĉ
+  D: Đ Ḓ Ď
+  G: Ǥ Ǧ Ģ
+  K: Ǩ Ḵ Ķ
+  N: Ŋ Ñ Ň Ṋ Ṉ
+  S: Š Ŝ Ṣ Ș SS
+  T: Ŧ Ț Ṱ Ṯ
   Z: Ž Ʒ Ǯ
 
-  a:   ä á à â ã ạ
-  e:   ë é è ê ẽ ẹ
-  i:   ï í ì î ĩ ị
-  o: ø ö ó ò ô õ ọ
-  u:   ü ú ù û ũ ụ
-  y:   ÿ ý ỳ ŷ
+  a:   ä á à â ã ā ạ å
+  e:   ë é è ê ẽ ē ẹ ė ǝ
+  i:   ï í ì î ĩ ī ị ı
+  o: ø ö ó ò ô õ ō ọ ȯ ő œ
+  u:   ü ú ù û ũ ū ụ ů
+  y:   ÿ ý ỳ ŷ ỹ ȳ ẏ ẙ ɏ
   æ: ä
   ö: ø
 
-  c: č ç
-  d: đ
-  g: ǧ ǥ ǧ
-  k: ǩ
-  n: ŋ ñ
-  s: š
-  t: ŧ
+  c: č ç ĉ
+  d: đ ḓ ď
+  g: ǥ ǧ ģ
+  k: ǩ ḵ ķ
+  n: ŋ ñ ň ṋ ṉ
+  s: š ŝ ṣ ș ß
+  t: ŧ ț ṱ ṯ
   z: ž ʒ ǯ
+
+  '%': ‰ ∞
+  '=': ≠ ≈
+  '-': • – —
+  '&': §
+  '?': ¿
+  '!': ¡
+  '"': „ “ ” « »
+  '''': ‚ ‘ ’
+
+transforms:
+  '`':
+    ' ': '`'
+    a: à
+    A: À
+    e: è
+    E: È
+    i: ì
+    I: Ì
+    'n': ǹ
+    'N': Ǹ
+    o: ò
+    O: Ò
+    u: ù
+    U: Ù
+    v: ǜ
+    V: Ǜ
+    w: ẁ
+    W: Ẁ
+    'y': ỳ
+    'Y': Ỳ
+  ´:
+    ' ': ´
+    a: á
+    A: Á
+    c: ć
+    C: Ć
+    e: é
+    E: É
+    g: ǵ
+    G: Ǵ
+    i: í
+    I: Í
+    k: ḱ
+    K: Ḱ
+    l: ĺ
+    L: Ĺ
+    m: ḿ
+    M: Ḿ
+    'n': ń
+    'N': Ń
+    o: ó
+    O: Ó
+    p: ṕ
+    P: Ṕ
+    r: ŕ
+    R: Ŕ
+    s: ś
+    S: Ś
+    u: ú
+    U: Ú
+    v: ǘ
+    V: Ǘ
+    w: ẃ
+    W: Ẃ
+    'y': ý
+    'Y': Ý
+    z: ź
+    Z: Ź
+    æ: ǽ
+    Æ: Ǽ
+    ø: ǿ
+    Ø: Ǿ
+  ¨:
+    ' ': ¨
+    a: ä
+    A: Ä
+    e: ë
+    E: Ë
+    i: ï
+    I: Ï
+    o: ö
+    O: Ö
+    u: ü
+    U: Ü
+    'y': ÿ
+    'Y': Ÿ
+  ^:
+    ' ': ^
+    a: â
+    A: Â
+    c: ĉ
+    C: Ĉ
+    e: ê
+    E: Ê
+    i: î
+    I: Î
+    j: ĵ
+    J: Ĵ
+    o: ô
+    O: Ô
+    s: ŝ
+    S: Ŝ
+    u: û
+    U: Û
+    'y': ŷ
+    'Y': Ŷ
+    z: ẑ
+    Z: Ẑ
 
 strings:
   space: væhtagaske
