@@ -9,7 +9,16 @@ displayNames:
   se: Lullisámegiella
   sv: Sydsamiska
 modes:
-  mobile:
+  android:
+    default: |
+      q w e r t y u i o p å
+      a s d f g h j k l ö æ
+         z x c v b n m ï
+    shift: |
+      Q W E R T Y U I O P Å
+      A S D F G H J K L Ö Æ
+         Z X C V B N M Ï
+  ios:
     default: |
       q w e r t y u i o p å
       a s d f g h j k l ö æ
@@ -30,23 +39,23 @@ modes:
     default: |
       q w e r t y u i o p å ï \s{backspace}
       \s{spacer:0.25} a s d f g h j k l ö æ \s{return:1.25}
-      \s{shift:1.1} z x c v b n m \s{comma} \s{fullstop} \s{shift:2.4}
+      \s{shift:1.1} z x c v b n m , . \s{shift:2.4}
     shift: |
       Q W E R T Y U I O P Å Ï \s{backspace}
       \s{spacer:0.25} A S D F G H J K L Ö Æ \s{return:1.25}
-      \s{shift:1.1} Z X C V B N M \s{comma} \s{fullstop} \s{shift:2.4}
+      \s{shift:1.1} Z X C V B N M , . \s{shift:2.4}
     alt: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
       \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
-      \s{shift:1.1} % _ - = / ; : \s{comma} \s{fullstop} \s{shift:2.4}
+      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
     alt+shift: |
-      1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace:}
+      1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
       \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
-      \s{shift:1.1} % _ - = / ; : \s{comma} \s{fullstop} \s{shift:2.4}
+      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
       \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
-      \s{shiftSymbols:1.1} % _ - = / ; : \s{comma} \s{fullstop} \s{shiftSymbols:2.4}
+      \s{shiftSymbols:1.1} % _ - = / ; : , . \s{shiftSymbols:2.4}
     symbols-2: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
       \s{spacer:0.25} $ £ ¥ ^ [ ] { } — ° … \s{return:1.25}
@@ -56,23 +65,30 @@ modes:
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
       \s{spacer:1.5}  q w e r t y u i o p å ï @
       \s{caps:1.75}   a s d f g h j k l ö æ \s{return:1.75}
-      \s{shift:1.25} < z x c v b n m \s{comma} \s{fullstop} - \s{shift:2.25}
+      \s{shift:1.25} < z x c v b n m , . - \s{shift:2.25}
     shift: |
       § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
       \s{spacer:1.5}  Q W E R T Y U I O P Å Ï *
       \s{caps:1.75}   A S D F G H J K L Ö Æ \s{return:1.75}
       \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     alt: |
-      § ! " # kr % & / ( ) = ? `
+      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5}  q w e r t y u i o p å ï *
+      \s{caps:1.75}   a s d f g h j k l ö æ \s{return:1.75}
+      \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
+    alt+shift: |
+      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5}  Q W E R T Y U I O P Å Ï *
+      \s{caps:1.75}   A S D F G H J K L Ö Æ \s{return:1.75}
+      \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     symbols-1: |
       ` 1 2 3 4 5 6 7 8 9 0 ¨ ^ \s{backspace:1.5}
       \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
       \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
       \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
-
 deadKeys:
   ipad-12in:
-    default:   [ ´ ]
+    default:   ['`', '´']
     shift:     ['`']
     symbols-1: [^, ¨]
 

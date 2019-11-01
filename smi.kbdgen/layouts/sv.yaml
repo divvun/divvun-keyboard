@@ -8,7 +8,16 @@ displayNames:
   nn: Svensk
   se: Ruoŧagiella
 modes:
-  mobile:
+  android:
+    default: |
+      q w e r t y u i o p å
+      a s d f g h j k l ö ä
+          z x c v b n m
+    shift: |
+      Q W E R T Y U I O P Å
+      A S D F G H J K L Ö Ä
+          Z X C V B N M
+  ios:
     default: |
       q w e r t y u i o p å
       a s d f g h j k l ö ä
@@ -27,42 +36,50 @@ modes:
       \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   ipad-9in:
     default: |
-      \s{"`":0.75} q w e r t y u i o p å \s{backspace:1.25}
-      \s{shift} a s d f g h j k l ö ä \s{shift}
-      \s{spacer:0.5} z x c v b n m \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      q w e r t y u i o p å \s{backspace:1.5}
+      \s{spacer:0.25} a s d f g h j k l ö ä \s{return:1.25}
+      \s{shift:1.1} z x c v b n m , . \s{shift:2.4}
     shift: |
-      \s{"`":0.75} Q W E R T Y U I O P Å \s{backspace:1.25}
-      \s{shift} A S D F G H J K L Ö Ä \s{shift}
-      \s{spacer:0.5} Z X C V B N M \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      Q W E R T Y U I O P Å \s{backspace:1.5}
+      \s{spacer:0.25} A S D F G H J K L Ö Ä \s{return:1.25}
+      \s{shift:1.1} Z X C V B N M ! ? \s{shift:2.4}
     alt: |
-      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
-      \s{shift} % # € & * ( ) ' " + • \s{shift}
-      \s{spacer:0.5} q w x - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.5}
+      \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
     alt+shift: |
-      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 Å \s{backspace:1.25}
-      \s{shift} % # € & * ( ) ' " + • \s{shift}
-      \s{spacer:0.5} % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.5}
+      \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
     symbols-1: |
-      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
-      \s{shiftSymbols} @ # € & * ( ) ' " + • \s{shiftSymbols}
-      \s{spacer:1.5} % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.5}
+      \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+      \s{shiftSymbols:1.1} % _ - = / ; : , . \s{shiftSymbols:2.4}
     symbols-2: |
-      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.25}
-      \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° … \s{shiftSymbols}
-      \s{spacer:1.5} § | ~ ≠ \ < > ! ? \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.5}
+      \s{spacer:0.25} $ £ ¥ ^ [ ] { } — ° … \s{return:1.25}
+      \s{shiftSymbols:1.1} § | ~ ≠ \ < > ! ? \s{shiftSymbols:2.4}
   ipad-12in:
     default: |
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
       \s{spacer:1.5} q w e r t y u i o p å @
       \s{caps:1.75} a s d f g h j k l ö ä \s{return:1.75}
-      \s{shift:1.25} < z x c v b n m \s{comma} \s{fullstop} - \s{shift:2.25}
+      \s{shift:1.25} < z x c v b n m , . - \s{shift:2.25}
     shift: |
       § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
       \s{spacer:1.5} Q W E R T Y U I O P Å *
       \s{caps:1.75} A S D F G H J K L Ö Ä \s{return:1.75}
       \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     alt: |
-      § ! " # kr % & / ( ) = ? `
+      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5} q w e r t y u i o p å *
+      \s{caps:1.75} a s d f g h j k l ö ä \s{return:1.75}
+      \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
+    alt+shift: |
+      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5} Q W E R T Y U I O P Å *
+      \s{caps:1.75} A S D F G H J K L Ö Ä \s{return:1.75}
+      \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     symbols-1: |
       ` 1 2 3 4 5 6 7 8 9 0 < > \s{backspace:1.5}
       \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~

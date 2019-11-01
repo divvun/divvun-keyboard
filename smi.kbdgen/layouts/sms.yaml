@@ -8,11 +8,20 @@ displayNames:
   nn: Skoltesamisk
   sv: Skoltsamiska
 modes:
-  mobile:
+  android:
     default: |
       â š e r t ǧ u i o p å ʹ
       a s d f g h j k l ä đ ʼ
-      \s{shift:1.25} ž z č c v b n m õ ǩ  \s{backspace:1.25}
+      ž z č c v b n m õ ǩ
+    shift: |
+      Â Š E R T Ǧ U I O P Å ʹ
+      A S D F G H J K L Ä Đ ʼ
+      Ž Z Č C V B N M Õ Ǩ
+  ios:
+    default: |
+      â š e r t ǧ u i o p å ʹ
+      a s d f g h j k l ä đ ʼ
+      \s{shift:1.25} ž z č c v b n m õ ǩ \s{backspace:1.25}
     shift: |
       Â Š E R T Ǧ U I O P Å ʹ
       A S D F G H J K L Ä Đ ʼ
@@ -29,40 +38,40 @@ modes:
     default: |
       \s{"`":0.75}  â š e r t ǧ u i o p å ʹ \s{backspace:1.25}
       \s{shift}     a s d f g h j k l ä đ ʼ \s{shift}
-      \s{spacer:0.5} ž z č c v b n m õ ǩ \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:0.5} ž z č c v b n m õ ǩ , . \s{spacer:0.5} \s{return:2}
     shift: |
       \s{"`":0.75}  Â Š E R T Ǧ U I O P Å ʹ \s{backspace:1.25}
       \s{shift}     A S D F G H J K L Ä Đ ʼ \s{shift}
-      \s{spacer:0.5} Ž Z Č C V B N M Õ Ǩ \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:0.5} Ž Z Č C V B N M Õ Ǩ , . \s{spacer:0.5} \s{return:2}
     alt: |
       \s{"@":0.75}  1 2 3 4 5 6 7 8 9 0 å \s{backspace:1.25}
       \s{shift}     % # € & ǥ ( ) ' " ø æ \s{shift}
-      \s{spacer:0.5} ǯ ʒ x - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:0.5} ǯ ʒ x - = / ; : , . \s{spacer:0.5} \s{return:2}
     alt+shift: |
       \s{"@":0.75}  1 2 3 4 5 6 7 8 9 0 Å \s{backspace:1.25}
       \s{shift}     % # € & Ǥ ( ) ' " Ø Æ \s{shift}
-      \s{spacer:0.5} Q W X - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:0.5} Q W X - = / ; : , . \s{spacer:0.5} \s{return:2}
     symbols-1: |
       \s{spacer:0.75}  1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
       \s{shiftSymbols} @ # € & * ( ) ' " + • \s{shiftSymbols}
-      \s{spacer:1.5}   % _ - = / ; : \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:1.5}   % _ - = / ; : , . \s{spacer:0.5} \s{return:2}
     symbols-2: |
       \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.25}
       \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° … \s{shiftSymbols}
-      \s{spacer:1.5} § | ~ ≠ \ < > ! ? \s{comma} \s{fullstop} \s{spacer:0.5} \s{return:2}
+      \s{spacer:1.5} § | ~ ≠ \ < > ! ? , . \s{spacer:0.5} \s{return:2}
   ipad-12in:
     default: |
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
       \s{spacer:1.5} á š e r t y u i o p å ŋ đ
       \s{caps:1.75} a s d f g h j k l ø æ \s{return:1.75}
-      \s{shift:1.25} ž z č c v b n m \s{comma} \s{fullstop} - \s{shift:2.25}
+      \s{shift:1.25} ž z č c v b n m , . - \s{shift:2.25}
     shift: |
       § ! " # € % & / ( ) = ? ` \s{backspace:1.5}
       \s{spacer:1.5} Á Š E R T Y U I O P Å Ŋ Đ
       \s{caps:1.75} A S D F G H J K L Ø Æ \s{return:1.75}
       \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.25}
     alt: |
-      § ! " # € % & / ( ) = ? `
+      § ! " # € % & / ( ) = ? ` \s{backspace:1.5}
     symbols-1: |
       ` 1 2 3 4 5 6 7 8 9 0 < > \s{backspace:1.5}
       \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
