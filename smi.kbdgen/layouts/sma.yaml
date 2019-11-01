@@ -8,6 +8,7 @@ displayNames:
   da: Sydsamisk
   se: Lullisámegiella
   sv: Sydsamiska
+
 modes:
   android:
     default: |
