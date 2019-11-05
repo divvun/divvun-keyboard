@@ -92,6 +92,11 @@ deadKeys:
     default:   ['`', '´']
     shift:     ['`']
     symbols-1: [^, ¨]
+deadKeys:
+  ipad-9in:
+    default:   ['`', '´']
+    shift:     ['`']
+    symbols-1: [^, ¨]
 
 longpress:
   A:   Ä Á À Â Ã Ā Ạ Å
