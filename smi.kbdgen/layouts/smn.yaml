@@ -3,30 +3,31 @@ displayNames:
   en: Inari Sami
   fi: Inarinsaame
   nb: Enaresamisk
-  nn: Enaresamisk
   'no': Enaresamisk
+  nn: Enaresamisk
+  da: Enaresamisk
   se: Anársámegiella
   sv: Enaresamiska
-decimal: ","
+
 modes:
   android:
     default: |
       á š e r t y u i o p â
       a s d f g h j k l đ ä
-       ž z č c v b n m ŋ -
+        ž z č c v b n m ŋ
     shift: |
       Á Š E R T Y U I O P Â
       A S D F G H J K L Đ Ä
-       Ž Z Č C V B N M Ŋ -
+        Ž Z Č C V B N M Ŋ
   ios:
     default: |
       á š e r t y u i o p â
       a s d f g h j k l đ ä
-      \s{shift:1.25} \s{spacer:0.25} ž z č c v b n m ŋ - \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift:1.25} \s{spacer:0.25} ž z č c v b n m ŋ \s{spacer:0.25} \s{backspace:1.25}
     shift: |
       Á Š E R T Y U I O P Â
       A S D F G H J K L Đ Ä
-      \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M Ŋ - \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M Ŋ \s{spacer:0.25} \s{backspace:1.25}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0
       - / : ; ( ) kr & @ "
@@ -37,29 +38,29 @@ modes:
       \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}  
   ipad-9in:
     default: |
-      \s{"`":0.75} á š e r t y u i o p â \s{backspace:1.25}
-      \s{shift}    a s d f g h j k l đ ä \s{shift}
-      \s{spacer:0.5} ž z č c v b n m ŋ , . \s{spacer:0.5} \s{return:2}
+      \s{"`":0.75}  á š e r t y u i o p â \s{backspace:1.25}
+      \s{shift}     a s d f g h j k l đ ä \s{shift}
+      \s{spacer:0.5}  ž z č c v b n m ŋ . \s{spacer:0.5} \s{return:2}
     shift: |
-      \s{"`":0.75} Á Š E R T Y U I O P Â \s{backspace:1.25}
-      \s{shift}    A S D F G H J K L Đ Ä \s{shift}
-      \s{spacer:0.5} Ž Z Č C V B N M Ŋ , . \s{spacer:0.5} \s{return:2}
+      \s{"`":0.75}  Á Š E R T Y U I O P Â \s{backspace:1.25}
+      \s{shift}     A S D F G H J K L Đ Ä \s{shift}
+      \s{spacer:0.5}  Ž Z Č C V B N M Ŋ . \s{spacer:0.5} \s{return:2}
     alt: |
-      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 å \s{backspace:1.25}
-      \s{shift}    % # kr & * ( ) ' " ö æ \s{shift}
-      \s{spacer:0.5} q w x - = / ; : , . \s{spacer:0.5} \s{return:2}
+      \s{"@":0.75}  1 2 3 4 5 6 7 8 9 0 å \s{backspace:1.25}
+      \s{shift}     % # € & * ( ) ' " ö æ \s{shift}
+      \s{spacer:0.5}  q w x - = / ; : ? , \s{spacer:0.5} \s{return:2}
     alt+shift: |
-      \s{"@":0.75} 1 2 3 4 5 6 7 8 9 0 Å \s{backspace:1.25}
-      \s{shift}    % # € & * ( ) ' " Ö Æ \s{shift}
-      \s{spacer:0.5} Q W X - = / ; : , . \s{spacer:0.5} \s{return:2}
+      \s{"@":0.75}  1 2 3 4 5 6 7 8 9 0 Å \s{backspace:1.25}
+      \s{shift}     % # € & * ( ) ' " Ö Æ \s{shift}
+      \s{spacer:0.5}  Q W X - = / ; : ? , \s{spacer:0.5} \s{return:2}
     symbols-1: |
-      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
+      \s{spacer:0.75}  1 2 3 4 5 6 7 8 9 0 ` \s{backspace:1.25}
       \s{shiftSymbols} @ # € & * ( ) ' " + • \s{shiftSymbols}
-      \s{spacer:1.5} % _ - = / ; : , . \s{spacer:0.5} \s{return:2}
+      \s{spacer:1.5}    % _ - = / ; : , . \s{spacer:0.5} \s{return:2}
     symbols-2: |
-      \s{spacer:0.75} 1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.25}
+      \s{spacer:0.75}  1 2 3 4 5 6 7 8 9 0 ´ \s{backspace:1.25}
       \s{shiftSymbols} € $ £ ^ [ ] { } — ° … \s{shiftSymbols}
-      \s{spacer:1.5} § | ~ ≠ \ < > ! ? , . \s{spacer:0.5} \s{return:2}
+      \s{spacer:1.5}    § | ~ ≠ \ < > ! ?    \s{spacer:0.5} \s{return:2}
   ipad-12in:
     default: |
       ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
@@ -72,12 +73,20 @@ modes:
       \s{caps:1.75}  A S D F G H J K L Đ Ä \s{return:1.75}
       \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.25}
     alt: |
-      § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+      § ! " # € % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5} á š e r t y u i o p å ŋ *
+      \s{caps:1.75}  a s d f g h j k l ö ä \s{return:1.75}
+      \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
+    alt+shift: |
+      § ! " # € % & / ( ) = ? ` \s{backspace:1.5}
+      \s{spacer:1.5} Q W E R T Y U I O P Å Ŋ @
+      \s{caps:1.75}  A S D F G H J K L Ö Ä \s{return:1.75}
+      \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
     symbols-1: |
       ` 1 2 3 4 5 6 7 8 9 0 < > \s{backspace:1.5}
-      \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
-      \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
-      \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
+      \s{spacer:1.5}  [ ] { } # % ^ * + = \ | ~
+      \s{spacer:1.75} - / : ; ( ) € & @ $ £ \s{return:1.75}
+      \s{spacer:3.25} … . , ? ! ' " _ €     \s{spacer:2.25}
   mac:
     default: |
       § 1 2 3 4 5 6 7 8 9 0 + ´
@@ -196,6 +205,66 @@ modes:
             Q     W     \u{0} \u{0} Ŧ     \u{0} Ø     Ï     Õ     \u{0} Å     \u{0}
             \u{0} SS    Ð     Ǥ     Ǧ     Ȟ     \u{0} Ǩ     \u{0} Ö     Æ     \u{0}
       Ǯ     Ʒ     X     Ç     \u{0} \u{0} \u{0} \u{0} \u{0} \u{0} \u{0}
+
+deadKeys:
+  mac:
+    default: [´]
+    shift: ['`']
+    caps: [´]
+    alt: ['-', ., ¨, ¯, ¸, ƒ, ʼ, ˀ, ˆ, ˇ, ˘, ˙, ˛, ˜, ˝]
+    alt+shift: [ʔ, №]
+    caps+alt: ['-', ., ¨, ¯, ¸, ƒ, ʼ, ˀ, ˆ, ˇ, ˘, ˙, ˛, ˜, ˝]
+    cmd+alt: [',', ¯, ¸, ƒ, ˙, ˜, ˝]
+  win:
+    default: [¨, ´]
+    shift: [^, '`']
+    caps: [¨, ´]
+    caps+shift: [^, '`']
+    alt: ['~']
+
+longpress:
+  A: Á Å Â Ä Æ Â
+  Á: Q
+  C: Ç
+  Č: X
+  D: Đ
+  G: Ǧ Ǥ
+  I: Ï
+  K: Ǩ
+  'N': Ŋ
+  Ŋ: -
+  O: Õ Ö Ø
+  Š: W
+  T: Ŧ
+  V: W
+  Z: Ǯ Ʒ
+
+  a: á å â ä æ â
+  á: q
+  c: ç
+  č: x
+  d: đ
+  g: ǧ ǥ
+  i: ï
+  k: ǩ
+  'n': ŋ
+  ŋ: -
+  o: õ ö ø
+  š: w
+  t: ŧ
+  v: w
+  z: ǯ ʒ
+
+  '%': ‰ ∞
+  '=': ≠ ≈
+  '-': _ – — •
+  '&': §
+  '?': ¿
+  '!': ¡
+  '.': , ; : ? ! ¿ ¡
+  '"': „ “ ” « »
+  '''': ‚ ‘ ’
+
 transforms:
   '-':
     ' ': '-'
@@ -712,36 +781,7 @@ transforms:
     O: Õ
     u: ũ
     U: Ũ
-longpress:
-  A: Á Å Â Ä Æ Â
-  Á: Q
-  C: Ç
-  Č: X
-  D: Đ
-  G: Ǧ Ǥ
-  I: Ï
-  K: Ǩ
-  'N': Ŋ
-  O: Õ Ö Ø
-  Š: W
-  T: Ŧ
-  V: W
-  Z: Ǯ Ʒ
-  a: á å â ä æ â
-  á: q
-  c: ç
-  č: x
-  d: đ
-  g: ǧ ǥ
-  i: ï
-  k: ǩ
-  'n': ŋ
-  o: õ ö ø
-  š: w
-  t: ŧ
-  v: w
-  z: ǯ ʒ
-  '-': _ – —
+
 strings:
   space: koskâ
   return: raddalâs
@@ -752,21 +792,7 @@ space:
     alt+shift: '\u{A0}'
     caps+alt: '\u{A0}'
     cmd+alt: '\u{A0}'
-deadKeys:
-  mac:
-    default: [´]
-    shift: ['`']
-    caps: [´]
-    alt: ['-', ., ¨, ¯, ¸, ƒ, ʼ, ˀ, ˆ, ˇ, ˘, ˙, ˛, ˜, ˝]
-    alt+shift: [ʔ, №]
-    caps+alt: ['-', ., ¨, ¯, ¸, ƒ, ʼ, ˀ, ˆ, ˇ, ˘, ˙, ˛, ˜, ˝]
-    cmd+alt: [',', ¯, ¸, ƒ, ˙, ˜, ˝]
-  win:
-    default: [¨, ´]
-    shift: [^, '`']
-    caps: [¨, ´]
-    caps+shift: [^, '`']
-    alt: ['~']
+
 targets:
   ios:
     legacyName: inari_sami_keyboard
