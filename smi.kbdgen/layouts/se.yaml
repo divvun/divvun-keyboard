@@ -87,6 +87,7 @@ modes:
       \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
       \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
       \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
+
 longpress:
   A:   Ä Á À Â Ã Ā Ạ Å
   Á: Q
