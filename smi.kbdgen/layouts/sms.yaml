@@ -67,22 +67,22 @@ modes:
       \s{spacer:1.5}   § | ~ ≠ \ < > ! ?        \s{spacer:0.5} \s{return:2}
   ipad-12in:
     default: |
-      '               1 2 3 4 5 6 7 8 9 0 + ʒ   \s{backspace:1.5}
+      §               ~ @ ǩ ǥ ǧ ŋ đ [ ] | + ʒ  \s{backspace:1.5}
       \s{spacer:1.5}  á š e r t y u i o p å ǯ ʹ
       \s{caps:1.75}   a s d f g h j k l õ ä     \s{return:1.75}
       \s{shift:1.25}  ž z č c v b n m , . -     \s{shift:2.25}
     shift: |
-      §               ! " # € % & / ( ) = ? Ʒ   \s{backspace:1.5}
+      ˚               ! " Ǩ Ǥ Ǧ Ŋ Đ ( ) = ? Ʒ   \s{backspace:1.5}
       \s{spacer:1.5}  Á Š E R T Y U I O P Å Ǯ ʹ
       \s{caps:1.75}   A S D F G H J K L Õ Ä     \s{return:1.75}
       \s{shift:1.25}  Ž Z Č C V B N M ; : _     \s{shift:2.25}
     alt: |
-      §               ! " # € % & / ( ) = ? `   \s{backspace:1.5}
+      '               1 2 3 4 5 6 7 8 9 0 ± `   \s{backspace:1.5}
       \s{spacer:1.5}  q w e r t y u i õ p å @ ʼ
       \s{caps:1.75}   a s đ f ǧ ǥ j ǩ l ö ä     \s{return:1.75}
       \s{shift:1.25}  < z x c v b ŋ m ; : _     \s{shift:2.25}
     alt+shift: |
-      §               ! " # € % & / ( ) = ? ´   \s{backspace:1.5}
+      ¶               ¡ ” # € % & / { } ≈ ¿ `   \s{backspace:1.5}
       \s{spacer:1.5}  Q W E R T Y U I Õ P Å @ ʼ
       \s{caps:1.75}   A S Đ F Ǧ Ǥ J Ǩ L Ö Ä     \s{return:1.75}
       \s{shift:1.25}  > Z X C V B Ŋ M ; : _     \s{shift:2.25}
