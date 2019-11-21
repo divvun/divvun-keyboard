@@ -12,22 +12,26 @@ displayNames:
 modes:
   android:
     default: |
-      â š e r t ǧ u i o p å ʹ
-      a s d f g h j k l ä đ ʼ
-      ž z č c v b n m õ ǩ
+      ʼ w ǩ ǥ ǧ ŋ đ ǯ ʒ ö ʹ
+      â š e r t y u i o p å
+      a s d f g h j k l õ ä
+         ž z č c v b n m
     shift: |
-      Â Š E R T Ǧ U I O P Å ʹ
-      A S D F G H J K L Ä Đ ʼ
-      Ž Z Č C V B N M Õ Ǩ
+      ʼ W Ǩ Ǥ Ǧ Ŋ Đ Ǯ Ʒ Ö ʹ
+      Â Š E R T Y U I O P Å
+      A S D F G H J K L Õ Ä
+         Ž Z Č C V B N M
   ios:
     default: |
-      â š e r t ǧ u i o p å ʹ
-      a s d f g h j k l ä đ ʼ
-      \s{shift:1.25} ž z č c v b n m õ ǩ \s{backspace:1.25}
+      ʼ w ǩ ǥ ǧ ŋ đ ǯ ʒ ö ʹ
+      â š e r t y u i o p å
+      a s d f g h j k l õ ä
+      \s{shift:1.25} \s{spacer:0.25} ž z č c v b n m \s{spacer:0.25} \s{backspace:1.25}
     shift: |
-      Â Š E R T Ǧ U I O P Å ʹ
-      A S D F G H J K L Ä Đ ʼ
-      \s{shift:1.25} Ž Z Č C V B N M Õ Ǩ \s{backspace:1.25}
+      ʼ W Ǩ Ǥ Ǧ Ŋ Đ Ǯ Ʒ Ö ʹ
+      Â Š E R T Y U I O P Å
+      A S D F G H J K L Õ Ä
+      \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M \s{spacer:0.25} \s{backspace:1.25}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0
       - / : ; ( ) kr & @ "
