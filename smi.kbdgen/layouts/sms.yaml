@@ -44,27 +44,33 @@ modes:
       \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   ipad-9in:
     default: |
-      \s{"ʹ":0.75}     â š e r t ǧ u i o p å    \s{backspace:1.25}
-      \s{shift}        a s d f g h j k l ä đ    \s{shift}
+      §                ~ @ ǩ ǥ ǧ ŋ đ [ ] | + ʒ  \s{backspace:1.25}
+      \s{spacer:0.5}   á š e r t y u i o p å ǯ ʹ
+      \s{shift}        a s d f g h j k l õ ä    \s{shift}
       \s{spacer:0.5}   ž z č c v b n m , .      \s{spacer:0.5} \s{return:2}
     shift: |
-      \s{"ʹ":0.75}     Â Š E R T Ǧ U I O P Å    \s{backspace:1.25}
-      \s{shift}        A S D F G H J K L Ä Đ    \s{shift}
+      ˚                ! " Ǩ Ǥ Ǧ Ŋ Đ ( ) = ? Ʒ  \s{backspace:1.5}
+      \s{spacer:1.5}   Á Š E R T Y U I O P Å Ǯ ʹ
+      \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
       \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{spacer:0.5} \s{return:2}
     alt: |
-      \s{"ʼ":0.75}     1 2 3 4 5 6 7 8 9 0 õ    \s{backspace:1.25}
-      \s{shift}        % # € & ǥ ( ) ǩ " æ ö    \s{shift}
-      \s{spacer:0.5}   ǯ ʒ x - = / ; : , .      \s{spacer:0.5} \s{return:2}
+      '                1 2 3 4 5 6 7 8 9 0 ± ʒ  \s{backspace:1.5}
+      \s{spacer:1.5}   á š e r t y u i o p å ǯ ʼ
+      \s{shift}        a s d f g h j k l õ ä    \s{shift}
+      \s{spacer:0.5}   ž z č c v b n m , .      \s{spacer:0.5} \s{return:2}
     alt+shift: |
-      \s{"ʼ":0.75}     1 2 3 4 5 6 7 8 9 0 Õ    \s{backspace:1.25}
-      \s{shift}        % # € & Ǥ ( ) Ǩ " Æ Ö    \s{shift}
-      \s{spacer:0.5}   Ǯ Ʒ X - = / ; : , .      \s{spacer:0.5} \s{return:2}
+      ¶                ¡ ” # € % & / { } ≈ ¿ Ʒ  \s{backspace:1.5}
+      \s{spacer:1.5}   Á Š E R T Y U I O P Å Ǯ ʼ
+      \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
+      \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{spacer:0.5} \s{return:2}
     symbols-1: |
-      \s{spacer:0.75}  1 2 3 4 5 6 7 8 9 0 `    \s{backspace:1.25}
+      \s{spacer:0.5}   1 2 3 4 5 6 7 8 9 0 `    \s{backspace:1.5}
+      \s{spacer:0.75}  © ™ £ € ∞ § | ‹ › ≈ ` ±
       \s{shiftSymbols} @ # € & * ( ) ' " + •    \s{shiftSymbols}
       \s{spacer:1.5}   % _ - = / ; : , .        \s{spacer:0.5} \s{return:2}
     symbols-2: |
-      \s{spacer:0.75}  1 2 3 4 5 6 7 8 9 0 ´    \s{backspace:1.25}
+      \s{spacer:0.5}   1 2 3 4 5 6 7 8 9 0 `    \s{backspace:1.5}
+      \s{spacer:0.75}  ¡ ® ¥ ¢ ‰ ¶ \ « » ≠ ´ ^
       \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° …    \s{shiftSymbols}
       \s{spacer:1.5}   § | ~ ≠ \ < > ! ?        \s{spacer:0.5} \s{return:2}
   ipad-12in:
@@ -79,7 +85,7 @@ modes:
       \s{caps:1.75}   A S D F G H J K L Õ Ä     \s{return:1.75}
       \s{shift:1.25}  Ž Z Č C V B N M ; : _     \s{shift:2.25}
     alt: |
-      '               1 2 3 4 5 6 7 8 9 0 ± `   \s{backspace:1.5}
+      '               1 2 3 4 5 6 7 8 9 0 ± ´   \s{backspace:1.5}
       \s{spacer:1.5}  á š e r t y u i o p å ǯ ʼ
       \s{caps:1.75}   a s d f g h j k l õ ä    \s{return:1.75}
       \s{shift:1.25}  ž z č c v b n m ; : _     \s{shift:2.25}
