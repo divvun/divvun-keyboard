@@ -64,13 +64,13 @@ modes:
       \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
       \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{return:2.5}
     symbols-1: |
-      1                  2 3 4 5 6 7 8 9 0 ` ±  \s{backspace:1.5}
-      \s{spacer:0.5}   © ™ £ € ∞ § | ‹ › ≈ ` ± '
+      1                  2 3 4 5 6 7 8 9 0 ` ±  \s{backspace}
+      \s{spacer:0.5}   © ™ £ € ∞ § | ‹ › ≈ ´ ˚  \s{spacer:0.5}
       \s{shiftSymbols} @ # € & * ( ) ' " + •    \s{shiftSymbols}
       \s{spacer:0.5}   < % _ - = / ; : , .        \s{return:2.5}
     symbols-2: |
-      \s{spacer:0.5}   1 2 3 4 5 6 7 8 9 0 ` ¿  \s{backspace:1.5}
-      \s{spacer:0.5}   ¡ ® ¥ ¢ ‰ ¶ \ « » ≠ ´ ^ ˚
+      \s{spacer:0.5}   1 2 3 4 5 6 7 8 9 0 ` ¿  \s{backspace}
+      \s{spacer:0.5}   ¡ ® ¥ ¢ ‰ ¶ \ « » ≠ ´ ^  \s{spacer:0.5}
       \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° …    \s{shiftSymbols}
       \s{spacer:0.5}   > § | ~ ≠ \ ‚ „ ! ?        \s{return:2.5}
   ipad-12in:
