@@ -44,22 +44,22 @@ modes:
       \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   ipad-9in:
     default: |
-      ~                  @ ǩ ǥ ǧ ŋ đ [ ] | ʹ ʒ  \s{backspace}
+      ʼ                  w ǩ ǥ ǧ ŋ đ [ ] | ʹ ʒ  \s{backspace}
       \s{spacer:0.5}   á š e r t y u i o p å ǯ  \s{spacer:0.5}
       \s{shift}        a s d f g h j k l õ ä    \s{shift}
       \s{spacer:0.5}   ž z č c v b n m , .      \s{return:2.5}
     shift: |
-      !                  " Ǩ Ǥ Ǧ Ŋ Đ ( ) ? ʹ Ʒ  \s{backspace}
+      ʼ                  " Ǩ Ǥ Ǧ Ŋ Đ ( ) ? ʹ Ʒ  \s{backspace}
       \s{spacer:0.5}   Á Š E R T Y U I O P Å Ǯ  \s{spacer:0.5}
       \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
       \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{return:2.5}
     alt: |
-      1                  2 3 4 5 6 7 8 9 0 ʼ +  \s{backspace}
+      1                  2 3 4 5 6 7 8 9 0 ~ +  \s{backspace}
       \s{spacer:0.5}   á š e r t y u i o p å ǯ  \s{spacer:0.5}
       \s{shift}        a s d f g h j k l õ ä    \s{shift}
       \s{spacer:0.5}   ž z č c v b n m , .      \s{return:2.5}
     alt+shift: |
-      ¡                  ” # € % & / { } ¿ ʼ ?  \s{backspace}
+      !                  ” # € % & / { } ¿ ¡ =  \s{backspace}
       \s{spacer:0.5}   Á Š E R T Y U I O P Å Ǯ  \s{spacer:0.5}
       \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
       \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{return:2.5}
