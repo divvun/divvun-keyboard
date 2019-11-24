@@ -49,7 +49,7 @@ modes:
       \s{shift}        a s d f g h j k l õ ä    \s{shift}
       \s{spacer:0.5}   ž z č c v b n m , .      \s{return:2.5}
     shift: |
-      ʼ                  " Ǩ Ǥ Ǧ Ŋ Đ ( ) ? ʹ Ʒ  \s{backspace}
+      ʼ                  W Ǩ Ǥ Ǧ Ŋ Đ ( ) ? ʹ Ʒ  \s{backspace}
       \s{spacer:0.5}   Á Š E R T Y U I O P Å Ǯ  \s{spacer:0.5}
       \s{shift}        A S D F G H J K L Õ Ä    \s{shift}
       \s{spacer:0.5}   Ž Z Č C V B N M , .      \s{return:2.5}
