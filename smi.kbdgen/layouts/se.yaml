@@ -74,7 +74,7 @@ modes:
       \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.25}
     alt: |
       § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
-      \s{spacer:1.5} á š e r t y u i o p å ŋ đ
+      \s{spacer:1.5} q w e r t y u i o p å ŋ đ
       \s{caps:1.75} a s d f g h j k l ö ä \s{return:1.75}
       \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
     alt+shift: |
