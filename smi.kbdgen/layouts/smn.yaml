@@ -23,11 +23,11 @@ modes:
     default: |
       á š e r t y u i o p â
       a s d f g h j k l đ ä
-      \s{shift:1.25} \s{spacer:0.25} ž z č c v b n m ŋ \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift} ž z č c v b n m ŋ \s{backspace}
     shift: |
       Á Š E R T Y U I O P Â
       A S D F G H J K L Đ Ä
-      \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M Ŋ \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift} Ž Z Č C V B N M Ŋ \s{backspace}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0
       - / : ; ( ) kr & @ "
@@ -74,7 +74,7 @@ modes:
       \s{shift:1.25} Ž Z Č C V B N M ; : _ \s{shift:2.25}
     alt: |
       § ! " # € % & / ( ) = ? ` \s{backspace:1.5}
-      \s{spacer:1.5} á š e r t y u i o p å ŋ *
+      \s{spacer:1.5} q w e r t y u i o p å ŋ *
       \s{caps:1.75}  a s d f g h j k l ö ä \s{return:1.75}
       \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
     alt+shift: |

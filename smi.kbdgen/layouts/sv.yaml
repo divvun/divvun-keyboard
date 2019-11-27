@@ -21,7 +21,7 @@ modes:
     default: |
       q w e r t y u i o p å
       a s d f g h j k l ö ä
-      \s{shift:1.25} \s{spacer:0.25} z x c v b n m \s{spacer:0.25} \s{backspace:1.25}
+      \s{shift:1.25} \s{spacer:0.75} z x c v b n m \s{spacer:0.75} \s{backspace:1.25}
     shift: |
       Q W E R T Y U I O P Å
       A S D F G H J K L Ö Ä
