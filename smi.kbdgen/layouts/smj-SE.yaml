@@ -47,12 +47,12 @@ modes:
       \s{shift:1.1} Z X C V B N M , . \s{shift:2.4}
     alt: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
-      \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
-      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
+      \s{spacer:0.25} % # € & * ( ) ' " + @ \s{return:1.25}
+      \s{shift:1.1} q w - = / ; : ! ? \s{shift:2.4}
     alt+shift: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
-      \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
-      \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
+      \s{spacer:0.25} % # € & * ( ) ' " + @ \s{return:1.25}
+      \s{shift:1.1} Q W - = / ; : ! ? \s{shift:2.4}
     symbols-1: |
       1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
       \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
