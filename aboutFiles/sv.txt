@@ -1,0 +1,6 @@
+Samiska tangentbord-appen har utvecklats av Divvun-gruppen vid UiT Norges arktiska universitet. Hela appen är tillgänglig som öppen källkod, källkoden finns i github.com/divvun. Layoutdefinitionerna finns i github.com/giellalt. Flera detaljer via länken nedanför.
+
+Vi uppskattar mycket att få höra hur du upplever tangentborden och appen, skriv gärna till oss med e-postlänken nedanför.
+
+WWW: http://divvun.no/keyboards/mobileindex.html
+Email: feedback@divvun.no
