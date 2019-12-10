@@ -1,4 +1,4 @@
-Samiske tastatur-appen er utvikla av Divvun-gruppa ved UiT Noregs arktiske universitet. Heile appen er tilgjengeleg som open kjeldekode, og kjeldekoden finst i github.com/divvun. Tastaturdefinisjonane finst i Subversion-repositoriet vårt. Du får fleire detaljar via lenka nedanfor.
+Samiske tastatur-appen er utvikla av Divvun-gruppa ved UiT Noregs arktiske universitet. Heile appen er tilgjengeleg som open kjeldekode, og kjeldekoden finst i github.com/divvun. Tastaturdefinisjonane finst i github.com/giellalt. Du får fleire detaljar via lenka nedanfor.
 
 Vi set stor pris på tilbakemeldingar, som du kan gje via e-postlenka nedanfor.
 
