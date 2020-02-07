@@ -42,9 +42,9 @@ modes:
       \s{shift}     a s d f g h j k l đ ŧ \s{shift}
       \s{spacer:0.5}  ž z č c v b n m , . \s{spacer:0.5} \s{return:2}
     shift: |
-      \s{"`":0.75}  Á Š E R T Y U I O P Ŋ \s{backspace:1.25}
+      \s{"@":0.75}  Á Š E R T Y U I O P Ŋ \s{backspace:1.25}
       \s{shift}     A S D F G H J K L Đ Ŧ \s{shift}
-      \s{spacer:0.5}  Ž Z Č C V B N M , . \s{spacer:0.5} \s{return:2}
+      \s{spacer:0.5}  Ž Z Č C V B N M ! ? \s{spacer:0.5} \s{return:2}
     alt: |
       \s{"@":0.75}  1 2 3  4 5 6 7 8 9 0 å \s{backspace:1.25}
       \s{shift}     % # kr & * ( ) ' " ø æ \s{shift}
