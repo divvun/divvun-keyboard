@@ -251,5 +251,6 @@ strings:
 targets:
   ios:
     legacyName: south_sami_keyboard
+    spellerPackageId: speller-sma
   android:
     legacyName: south_sami_keyboard

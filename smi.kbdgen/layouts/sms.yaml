@@ -658,6 +658,7 @@ space:
 targets:
   ios:
     legacyName: skolt_sami_keyboard
+    spellerPackageId: speller-sms
   android:
     legacyName: skolt_sami_keyboard
   win:

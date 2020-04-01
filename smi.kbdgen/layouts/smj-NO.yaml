@@ -828,6 +828,7 @@ deadKeys:
 targets:
   ios:
     legacyName: julev_sami_keyboard_no
+    spellerPackageId: speller-smj
   android:
     legacyName: julev_sami_keyboard_no
   win:

@@ -369,6 +369,7 @@ deadKeys:
 targets:
   ios:
     legacyName: julev_sami_keyboard
+    spellerPackageId: speller-smj
   win:
     locale: smj-Latn-SE
   chrome:

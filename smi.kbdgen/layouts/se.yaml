@@ -145,5 +145,6 @@ strings:
 targets:
   ios:
     legacyName: northern_sami_keyboard
+    spellerPackageId: speller-sme
   android:
     legacyName: northern_sami_keyboard

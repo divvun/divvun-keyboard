@@ -796,6 +796,7 @@ space:
 targets:
   ios:
     legacyName: inari_sami_keyboard
+    spellerPackageId: speller-smn
   android:
     legacyName: inari_sami_keyboard
   win:
