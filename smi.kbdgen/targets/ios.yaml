@@ -5,6 +5,6 @@ bundleName: Sami Keyboards
 sentryDsn: https://94b33a64dc8e4471a7c8cb2f40ce37dc@sentry.io/1227106
 aboutDir: ../aboutFiles
 version: 2.3.2
-build: 264
+build: 265
 bhfst: true
 userDictionaryEnabled: true
