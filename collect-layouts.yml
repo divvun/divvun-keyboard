@@ -8,7 +8,7 @@ steps:
         set -ex
         test -d "${{ parameters.targetKbdgen }}" || (echo "kbdgen folder '${{ parameters.targetKbdgen }}' doesn't exist" && exit 1)
         export KBD_GIT_DIR="$(Agent.TempDirectory)/_${{keyboard.sourceKbdgen}}"
-        git clone --depth=1 --branch ${{ keyboard.branch }} --single-branch https://github.com/giellalt/keyboard-smi/ $KBD_GIT_DIR
+        git clone --depth=1 --branch ${{ keyboard.branch }} --single-branch "${{ keyboard.git }}" $KBD_GIT_DIR
         echo "##vso[task.setvariable variable=KBD_GIT_DIR]$KBD_GIT_DIR"
       displayName: "Fetch layouts from ${{ keyboard.sourceKbdgen }}"
     - ${{ each layout in keyboard.layouts }}:
@@ -16,6 +16,9 @@ steps:
             set -e
             LAYOUT="$KBD_GIT_DIR/${{ keyboard.sourceKbdgen }}/layouts/${{ layout }}.yaml"
             LAYOUT_TARGET="${{ parameters.targetKbdgen }}/layouts/${{ layout }}.yaml"
+            ls -lah "$KBD_GIT_DIR"
+            ls -lah "$KBD_GIT_DIR/${{ keyboard.sourceKbdgen }}"
+            ls -lah "$KBD_GIT_DIR/${{ keyboard.sourceKbdgen }}/layouts"
             test -f "$LAYOUT_TARGET" && echo "Layout collision: '$LAYOUT_TARGET' already exists" && exit 1
             mkdir -p "${{ parameters.targetKbdgen }}/layouts"
             cp "$LAYOUT" "$LAYOUT_TARGET"

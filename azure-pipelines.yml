@@ -8,7 +8,7 @@ resources:
 jobs:
   - template: "keyboard-mobile-consolidated.yml"
     parameters:
-      name: smi
+      name: divvun
       packageName: keyboard-smi
       androidKeyAlias: sami_keyboard
       kbdgenFolder: "divvun.kbdgen"
@@ -16,4 +16,8 @@ jobs:
         - git: https://github.com/giellalt/keyboard-smi/
           branch: master
           sourceKbdgen: smi.kbdgen
-          layouts: [se-FI, se-NO, se-SE, sma-SE]
+          layouts: [se, fi, nb]
+        # - git: https://github.com/giellalt/keyboard-crk/
+        #   branch: master
+        #   sourceKbdgen: crk.kbdgen
+        #   layouts: [crk]
