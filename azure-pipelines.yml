@@ -6,7 +6,7 @@ resources:
       endpoint: divvun-ci
 
 jobs:
-  - template: "keyboard-mobile-consolidated.yml"
+  - template: repo/templates/keyboard-consolidated.yml@templates
     parameters:
       name: divvun
       packageName: keyboard-smi
