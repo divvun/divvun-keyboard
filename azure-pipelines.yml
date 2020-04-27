@@ -12,7 +12,7 @@ jobs:
       packageName: keyboard-smi
       androidKeyAlias: sami_keyboard
       kbdgenFolder: "divvun.kbdgen"
-      keyboard_sources:
+      keyboardSources:
         - git: https://github.com/giellalt/keyboard-smi/
           branch: master
           sourceKbdgen: smi.kbdgen
