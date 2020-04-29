@@ -828,9 +828,12 @@ deadKeys:
 targets:
   ios:
     legacyName: julev_sami_keyboard_no
-    spellerPackageId: speller-smj
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smj
+    spellerPath: smj.bhfst
   android:
     legacyName: julev_sami_keyboard_no
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smj
+    spellerPath: smj.bhfst
   win:
     locale: smj-Latn-NO
   chrome:

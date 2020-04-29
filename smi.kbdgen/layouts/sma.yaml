@@ -251,6 +251,9 @@ strings:
 targets:
   ios:
     legacyName: south_sami_keyboard
-    spellerPackageId: speller-sma
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sma
+    spellerPath: sma.bhfst
   android:
     legacyName: south_sami_keyboard
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sma
+    spellerPath: sma.bhfst

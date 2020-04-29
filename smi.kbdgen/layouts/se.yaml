@@ -145,6 +145,9 @@ strings:
 targets:
   ios:
     legacyName: northern_sami_keyboard
-    spellerPackageId: speller-sme
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sme
+    spellerPath: se.bhfst
   android:
     legacyName: northern_sami_keyboard
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sme
+    spellerPath: se.bhfst

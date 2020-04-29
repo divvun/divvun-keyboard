@@ -658,9 +658,12 @@ space:
 targets:
   ios:
     legacyName: skolt_sami_keyboard
-    spellerPackageId: speller-sms
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sms
+    spellerPath: sms.bhfst
   android:
     legacyName: skolt_sami_keyboard
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-sms
+    spellerPath: sms.bhfst
   win:
     locale: sms-Latn-FI
     id: smswi

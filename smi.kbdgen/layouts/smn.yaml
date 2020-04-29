@@ -796,9 +796,12 @@ space:
 targets:
   ios:
     legacyName: inari_sami_keyboard
-    spellerPackageId: speller-smn
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smn
+    spellerPath: smn.bhfst
   android:
     legacyName: inari_sami_keyboard
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smn
+    spellerPath: smn.bhfst
   win:
     locale: smn-Latn
     languageName: Anarâškielâ

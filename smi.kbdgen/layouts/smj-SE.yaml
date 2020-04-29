@@ -369,7 +369,11 @@ deadKeys:
 targets:
   ios:
     legacyName: julev_sami_keyboard
-    spellerPackageId: speller-smj
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smj
+    spellerPath: smj.bhfst
+  android:
+    spellerPackageKey: https://x.brendan.so/divvun-pahkat-repo/packages/speller-smj
+    spellerPath: smj.bhfst
   win:
     locale: smj-Latn-SE
   chrome:
