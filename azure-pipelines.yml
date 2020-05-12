@@ -14,10 +14,10 @@ jobs:
       kbdgenFolder: "divvun.kbdgen"
       keyboardSources:
         - git: https://github.com/giellalt/keyboard-smi/
-          branch: master
+          branch: new-format
           sourceKbdgen: smi.kbdgen
-          layouts: [se, fi, nb]
-        # - git: https://github.com/giellalt/keyboard-crk/
-        #   branch: master
-        #   sourceKbdgen: crk.kbdgen
-        #   layouts: [crk]
+          layouts: [se, fi, nb, sv, sma, smj-NO, smj-SE, smn, sms]
+        - git: https://github.com/giellalt/keyboard-crk/
+          branch: master
+          sourceKbdgen: crk.kbdgen
+          layouts: [crk]
