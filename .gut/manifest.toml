@@ -1,0 +1,29 @@
+[package]
+name = "divvun"
+
+[consolidated.sms]
+git = "https://github.com/giellalt/keyboard-sms"
+layouts = ["sms"]
+
+[consolidated.smn]
+git = "https://github.com/giellalt/keyboard-smn"
+layouts = ["smn"]
+
+[consolidated.sma]
+git = "https://github.com/giellalt/keyboard-sma"
+layouts = ["sma"]
+
+[consolidated.smj]
+git = "https://github.com/giellalt/keyboard-smj"
+layouts = ["smj-NO", "smj-SE"]
+
+[consolidated.sme]
+git = "https://github.com/giellalt/keyboard-sme"
+layouts = ["se", "se-FI", "se-NO", "se-SE"]
+
+[consolidated.crk]
+git = "https://github.com/giellalt/keyboard-crk/"
+layouts = ["crk"]
+
+[bundles.keyboard_android]
+[bundles.keyboard_ios]
