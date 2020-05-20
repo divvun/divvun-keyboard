@@ -8,10 +8,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - type: keyboard_macos
-            os: macos-latest
-          - type: keyboard_win
-            os: windows-latest
           - type: keyboard_ios
             os: macos-latest
           - type: keyboard_android
@@ -24,19 +20,11 @@ jobs:
         with:
           bundleType: ${{ matrix.type }}
           manifest: ".gut/manifest.toml"
-
       - name: Setup Divvun CI
         if: steps.bundleCheck.outputs.bundleExists == 'true'
         uses: divvun/actions/setup@kbdgen
         with:
           key: ${{ secrets.DIVVUN_KEY }}
-      # - uses: actions/cache@v1
-      #   if: matrix.type == 'keyboard_android'
-      #   with:
-      #     path: ~/.gradle/caches
-      #     key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-gradle-
       - name: Install Rust toolchain
         if: steps.bundleCheck.outputs.bundleExists == 'true' && (matrix.type == 'keyboard_ios' || matrix.type == 'keyboard_android')
         uses: actions-rs/toolchain@v1
