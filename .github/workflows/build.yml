@@ -66,8 +66,8 @@ jobs:
         if: steps.bundleCheck.outputs.bundleExists == 'true' &&matrix.type == 'keyboard_win'
         shell: bash
         run: |
-          curl -o 6aa798a39c.zip https://x.brendan.so/6aa798a39c.zip
-          7z x 6aa798a39c.zip
+          curl -o msklc.zip https://pahkat.uit.no/artifacts/msklc.zip
+          7z x msklc.zip
           echo "::set-env name=MSKLC_PATH::${GITHUB_WORKSPACE}/msklc1.4"
       - name: Run kbdgen
         id: bundler
