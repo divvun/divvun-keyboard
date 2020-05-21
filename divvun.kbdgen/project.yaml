@@ -1,25 +1,25 @@
 locales:
   en:
     name: "Divvun Keyboards"
-    description: "Keyboards for the Sámi languages from the Divvun group at UiT."
+    description: "Keyboards for minority and indigenous languages from the Divvun group at UiT."
   fi:
-    name: "Divvun näppäimistöt"
+    name: "Divvun-näppäimistöt"
     description: "Saamen kielen näppäimistöt Tromssan yliopiston Divvun-ryhmältä."
   'no':
-    name: "Divvun tastaturer"
-    description: "Tastatur for samiske språk fra Divvun-gruppa ved UiT."
+    name: "Divvun-tastaturer"
+    description: "Tastaturer for minoritets- og urfolksspråk fra Divvun-gruppa ved UiT."
   nb:
-    name: "Divvun tastaturer"
-    description: "Tastatur for samiske språk fra Divvun-gruppa ved UiT."
+    name: "Divvun-tastaturer"
+    description: "Tastaturer for minoritets- og urfolksspråk fra Divvun-gruppa ved UiT."
   nn:
-    name: "Divvun tastatur"
-    description: "Tastatur for samiske språk frå Divvun-gruppa ved UiT."
+    name: "Divvun-tastatur"
+    description: "Tastatur for minoritets- og urfolksspråk frå Divvun-gruppa ved UiT."
   se:
     name: "Divvun boallobeavddit"
     description: "Boallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
   sv:
-    name: "Divvun tangentbord"
-    description: "Tangentbord för samiska språk från Divvun-gruppen vid UiT."
+    name: "Divvun-tangentbord"
+    description: "Tangentbord för minoritets- och urfolksspråk från Divvun-gruppen vid UiT."
 
 author: The Divvun Group, UiT Norgga árktalaš universitehta
 email: feedback@divvun.no
