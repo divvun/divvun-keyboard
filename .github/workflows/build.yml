@@ -1,6 +1,5 @@
 name: "Build Keyboard"
-on: push
-
+on: [push, repository_dispatch]
 jobs:
   build:
     runs-on: ${{ matrix.os }}
