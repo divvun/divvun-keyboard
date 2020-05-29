@@ -1,0 +1,23 @@
+[bundle.sms]
+github = "giellalt/keyboard-sms"
+layouts = ["sms"]
+
+[bundle.smn]
+github = "giellalt/keyboard-smn"
+layouts = ["smn"]
+
+[bundle.sma]
+github = "giellalt/keyboard-sma"
+layouts = ["sma"]
+
+[bundle.sme]
+github = "giellalt/keyboard-sme"
+layouts = ["se"]
+
+[bundle.smj]
+github = "giellalt/keyboard-smj"
+layouts = ["smj-NO", "smj-SE"]
+
+[bundle.crk]
+github = "giellalt/keyboard-crk"
+layouts = ["crk"]
