@@ -23,7 +23,7 @@ layouts = ["se"]
 
 [consolidated.crk]
 git = "https://github.com/giellalt/keyboard-crk/"
-layouts = ["crk"]
+layouts = ["crk", "crk-Cans"]
 
 [bundles.keyboard_android]
 [bundles.keyboard_ios]
