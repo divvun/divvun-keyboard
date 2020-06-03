@@ -1,0 +1,63 @@
+name: "Build Keyboard from Meta-bundle"
+on: [push, repository_dispatch]
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - type: keyboard-ios
+            os: macos-latest
+          - type: keyboard-android
+            os: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Divvun CI
+        uses: divvun/actions/setup@master
+        with:
+          key: ${{ secrets.DIVVUN_KEY }}
+      - name: Install build tools from Pahkat for macOS
+        uses: divvun/actions/pahkat/init@master
+        with:
+          repo: https://pahkat.uit.no/devtools/
+          channel: nightly
+          packages: kbdgen, imagemagick
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          profile: minimal
+          override: true
+      - name: Install Dependencies (iOS) 
+        if: matrix.type == 'keyboard-ios'
+        run: |
+          rustup component add rustfmt
+          rustup target add aarch64-apple-ios
+          rustup target add x86_64-apple-ios
+          cargo install cargo-lipo
+      - name: Install Dependencies (Android)
+        if: matrix.type == 'keyboard-android'
+        run: |
+          rustup target add aarch64-linux-android
+          rustup target add armv7-linux-androideabi
+          cargo install cargo-ndk
+      - name: Run kbdgen
+        id: build
+        uses: divvun/actions/keyboard/build-meta@master
+        with:
+          keyboard-type: ${{ matrix.type }}
+          bundle-path: divvun.kbdgen
+      - name: Publish (iOS)
+        if: matrix.type == 'keyboard-ios' && github.ref == 'refs/heads/master'
+        run: |
+          source "$DIVVUN_CI_CONFIG/enc/env.sh"
+          fastlane pilot upload --skip_submission --skip_waiting_for_build_processing --ipa output/ios-build/ipa/HostingApp.ipa
+      - name: Publish (Android)
+        if: matrix.type == 'keyboard-android' && github.ref == 'refs/heads/master'
+        run: |
+          source "$DIVVUN_CI_CONFIG/enc/env.sh"
+          cd output/deps/giella-ime
+          ./gradlew publishApk
+
+
