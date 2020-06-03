@@ -21,3 +21,7 @@ layouts = ["smj-NO", "smj-SE"]
 [bundle.crk]
 github = "giellalt/keyboard-crk"
 layouts = ["crk"]
+
+[bundle.srs]
+github = "giellalt/keyboard-srs"
+layouts = ["srs"]

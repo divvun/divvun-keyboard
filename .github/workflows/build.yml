@@ -7,83 +7,57 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - type: keyboard_ios
+          - type: keyboard-ios
             os: macos-latest
-          - type: keyboard_android
+          - type: keyboard-android
             os: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Check if bundle should be built
-        id: bundleCheck
-        uses: divvun/actions/speller/check@kbdgen
-        with:
-          bundleType: ${{ matrix.type }}
-          manifest: ".gut/manifest.toml"
       - name: Setup Divvun CI
-        if: steps.bundleCheck.outputs.bundleExists == 'true'
-        uses: divvun/actions/setup@kbdgen
+        uses: divvun/actions/setup@refactor
         with:
           key: ${{ secrets.DIVVUN_KEY }}
+      - name: Install build tools from Pahkat for macOS
+        uses: divvun/actions/pahkat/init@refactor
+        with:
+          repo: https://pahkat.uit.no/devtools/
+          channel: nightly
+          packages: kbdgen, imagemagick
       - name: Install Rust toolchain
-        if: steps.bundleCheck.outputs.bundleExists == 'true' && (matrix.type == 'keyboard_ios' || matrix.type == 'keyboard_android')
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
           profile: minimal
           override: true
-      - name: Install Dependencies MacOS
-        if: steps.bundleCheck.outputs.bundleExists == 'true' && matrix.type == 'keyboard_macos'
-        run: |
-          brew install imagemagick
-      - name: Install Dependencies IOS
-        if: steps.bundleCheck.outputs.bundleExists == 'true' && matrix.type == 'keyboard_ios'
+      - name: Install Dependencies (iOS) 
+        if: matrix.type == 'keyboard-ios'
         run: |
           rustup component add rustfmt
           rustup target add aarch64-apple-ios
           rustup target add x86_64-apple-ios
-          brew install imagemagick
           cargo install cargo-lipo
-      - name: Install Dependencies Android
-        if: steps.bundleCheck.outputs.bundleExists == 'true' && matrix.type == 'keyboard_android'
+      - name: Install Dependencies (Android)
+        if: matrix.type == 'keyboard-android'
         run: |
           rustup target add aarch64-linux-android
           rustup target add armv7-linux-androideabi
           cargo install cargo-ndk
-      - name: Install Dependencies Windows
-        if: steps.bundleCheck.outputs.bundleExists == 'true' &&matrix.type == 'keyboard_win'
-        shell: bash
-        run: |
-          curl -o msklc.zip https://pahkat.uit.no/artifacts/msklc.zip
-          7z x msklc.zip
-          echo "::set-env name=MSKLC_PATH::${GITHUB_WORKSPACE}/msklc1.4"
       - name: Run kbdgen
-        id: bundler
-        uses: divvun/actions/speller/bundle@kbdgen
+        id: build
+        uses: divvun/actions/keyboard/build-meta@refactor
         with:
-          bundleType: ${{ matrix.type }}
-          manifest: ".gut/manifest.toml"
-      - name: Upload Output
-        if: steps.bundler.outputs.bundle != null
-        uses: actions/upload-artifact@v2
-        with:
-          name: installer
-          path: "${{ steps.bundler.outputs.bundle }}"
-      - name: Publish IOS
-        if: matrix.type == 'keyboard_ios' && steps.bundler.outputs.bundle != null && github.ref == 'refs/heads/master'
+          keyboard-type: ${{ matrix.type }}
+          bundle-path: divvun.kbdgen
+      - name: Publish (iOS)
+        if: matrix.type == 'keyboard-ios' && github.ref == 'refs/heads/master'
         run: |
           source "$DIVVUN_CI_CONFIG/enc/env.sh"
           fastlane pilot upload --skip_submission --skip_waiting_for_build_processing --ipa output/ios-build/ipa/HostingApp.ipa
-      - name: Publish Android
-        if: matrix.type == 'keyboard_android' && steps.bundler.outputs.bundle != null && github.ref == 'refs/heads/master'
+      - name: Publish (Android)
+        if: matrix.type == 'keyboard-android' && github.ref == 'refs/heads/master'
         run: |
           source "$DIVVUN_CI_CONFIG/enc/env.sh"
           cd output/deps/giella-ime
           ./gradlew publishApk
-      - name: Deploy to Pahkat
-        if: (matrix.type == 'keyboard_macos' || matrix.type == 'keyboard_win') && steps.bundler.outputs.bundle != null && github.ref == 'refs/heads/master'
-        uses: divvun/actions/speller/deploy@kbdgen
-        with:
-          payload: "${{ steps.bundler.outputs.bundle }}"
-          bundleType: ${{ matrix.type }}
-          manifest: ".gut/manifest.toml"
+
 
