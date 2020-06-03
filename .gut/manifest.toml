@@ -25,5 +25,9 @@ layouts = ["se"]
 git = "https://github.com/giellalt/keyboard-crk/"
 layouts = ["crk", "crk-Cans"]
 
+[consolidated.srs]
+git = "https://github.com/giellalt/keyboard-srs/"
+layouts = ["srs"]
+
 [bundles.keyboard_android]
 [bundles.keyboard_ios]
