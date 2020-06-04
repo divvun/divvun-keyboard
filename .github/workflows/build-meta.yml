@@ -22,7 +22,7 @@ jobs:
         with:
           repo: https://pahkat.uit.no/devtools/
           channel: nightly
-          packages: kbdgen, imagemagick
+          packages: kbdgen
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
         with:
