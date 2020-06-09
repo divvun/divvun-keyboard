@@ -1,8 +1,8 @@
 codeSignId: "Apple Distribution: The University of Tromso (2K5J2584NX)"
 teamId: 2K5J2584NX
 packageId: no.uit.giella.keyboards.Sami
-bundleName: Sami Keyboards
+bundleName: Divvun Keyboards
 sentryDsn: https://94b33a64dc8e4471a7c8cb2f40ce37dc@sentry.io/1227106
 aboutDir: ../aboutFiles
-version: 2.99.6
+version: 2.99.7
 build: 265
