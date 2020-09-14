@@ -1,4 +1,4 @@
-name: "Build Keyboard from Meta-bundle"
+name: Build
 on: [push, repository_dispatch]
 jobs:
   build:
