@@ -14,11 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Setup Divvun CI
-        uses: divvun/actions/setup@master
+        uses: divvun/actions/setup@develop
         with:
           key: ${{ secrets.DIVVUN_KEY }}
       - name: Install build tools from Pahkat for macOS
-        uses: divvun/actions/pahkat/init@master
+        uses: divvun/actions/pahkat/init@develop
         with:
           repo: https://pahkat.uit.no/devtools/
           channel: nightly
@@ -45,7 +45,7 @@ jobs:
           cargo install cargo-ndk
       - name: Run kbdgen
         id: build
-        uses: divvun/actions/keyboard/build-meta@master
+        uses: divvun/actions/keyboard/build-meta@develop
         with:
           keyboard-type: ${{ matrix.type }}
           bundle-path: divvun.kbdgen
