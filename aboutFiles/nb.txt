@@ -1,4 +1,4 @@
-Divvun-tastaturer-appen er utvikla av Divvun-gruppa ved UiT Norges arktiske universitet. Hele appen er tilgjengelig som åpen kildekode, og kildekoden finnes i github.com/divvun. Tastaturdefinisjonene finnes i github.com/giellalt. Du får flere detaljer via lenken nedenfor.
+Divvun-tastaturappen er utvikla av Divvun-gruppa ved UiT Norges arktiske universitet. Hele appen er tilgjengelig som åpen kildekode, og kildekoden finnes i github.com/divvun. Tastaturdefinisjonene finnes i github.com/giellalt. Du får flere detaljer via lenken nedenfor.
 
 Vi setter stor pris på tilbakemeldinger, som du kan gi via e-postlenken nedenfor.
 
