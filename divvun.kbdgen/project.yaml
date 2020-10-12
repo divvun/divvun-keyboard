@@ -4,7 +4,7 @@ locales:
     description: "Keyboards for minority and indigenous languages from the Divvun group at UiT."
   fi:
     name: "Divvun-näppäimistöt"
-    description: "Saamen kielen näppäimistöt Tromssan yliopiston Divvun-ryhmältä."
+    description: "Vähemmistö- ja alkuperäiskielten kielten näppäimistöt Tromssan yliopiston Divvun-ryhmältä."
   'no':
     name: "Divvun-tastaturer"
     description: "Tastaturer for minoritets- og urfolksspråk fra Divvun-gruppa ved UiT."
@@ -15,8 +15,11 @@ locales:
     name: "Divvun-tastatur"
     description: "Tastatur for minoritets- og urfolksspråk frå Divvun-gruppa ved UiT."
   se:
-    name: "Divvun boallobeavddit"
-    description: "Boallobeavddit sámegielaide maid Divvun-joavku UiT:s lea ráhkadan."
+    name: "Divvun-boallobeavddit"
+    description: "Unnitlogu- ja eamiálbmotgielaid boallobeavddit maid Divvun-joavku UiT:s lea ráhkadan."
+  smj:
+    name: "Divvun-boallobievde"
+    description: "Unneplågo- ja iemeálmmukgiela boallobievde majt Divvun-juogos UiT:an la dahkam."
   sv:
     name: "Divvun-tangentbord"
     description: "Tangentbord för minoritets- och urfolksspråk från Divvun-gruppen vid UiT."
