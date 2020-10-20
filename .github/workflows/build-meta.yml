@@ -32,7 +32,7 @@ jobs:
       - name: Install Dependencies (iOS) 
         if: matrix.type == 'keyboard-ios'
         run: |
-          xcode-select -s $XCODE_12_DEVELOPER_DIR
+          sudo xcode-select -s $XCODE_12_DEVELOPER_DIR
           sudo gem install fastlane
           rustup component add rustfmt
           rustup target add aarch64-apple-ios
