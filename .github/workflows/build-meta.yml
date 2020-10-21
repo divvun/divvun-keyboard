@@ -36,6 +36,7 @@ jobs:
           sudo gem install fastlane
           rustup component add rustfmt
           rustup target add aarch64-apple-ios
+          rustup target add x86_64-apple-ios
           cargo install cargo-lipo
       - name: Install Dependencies (Android)
         if: matrix.type == 'keyboard-android'
