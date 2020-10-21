@@ -54,7 +54,7 @@ jobs:
         if: matrix.type == 'keyboard-ios' && github.ref == 'refs/heads/master'
         run: |
           source "$DIVVUN_CI_CONFIG/enc/env.sh"
-          fastlane pilot upload --skip_submission --skip_waiting_for_build_processing --ipa output/ios-build/ipa/HostingApp.ipa
+          fastlane pilot upload --skip_submission --skip_waiting_for_build_processing --ipa "output/ios-build/ipa/Divvun Keyboards.ipa"
       - name: Publish (Android)
         if: matrix.type == 'keyboard-android' && github.ref == 'refs/heads/master'
         run: |
