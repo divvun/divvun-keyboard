@@ -1,10 +1,10 @@
-[bundle.myv]
-github = "giellalt/keyboard-myv"
-layouts = ["myv"]
-
 [bundle.mdf]
 github = "giellalt/keyboard-mdf"
 layouts = ["mdf"]
+
+[bundle.myv]
+github = "giellalt/keyboard-myv"
+layouts = ["myv"]
 
 [bundle.sms]
 github = "giellalt/keyboard-sms"
