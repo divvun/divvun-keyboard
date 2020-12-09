@@ -1,0 +1,6 @@
+Divvun-näppäimistösovellus on UiT Norjan Arktisen yliopiston Divvun -ryhmän tekemä. Se on avointa lähdekoodia, joka on ladattavissa github.com/divvun -sivulta. Näppäimistömääritelmät löytää github.com/giellalt -sivulta. Lisätietoja saa alla olevasta linkistä.
+
+Arvostamme kaikkea palautetta, minkä annat. Katso palautesähköpostia alempana.
+
+WWW: http://divvun.no/keyboards/mobileindex.html
+Sähköposti: feedback@divvun.no
