@@ -1,5 +1,5 @@
 packageId: no.uit.giella.keyboards.Sami
 keyAlias: sami_keyboard
 sentryDsn: https://8f857d788e764bd2a13aaafdf0018c92@sentry.io/1341912
-version: 2.99.9
+version: 2.99.10
 build: 111
