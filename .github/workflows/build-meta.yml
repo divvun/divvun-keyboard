@@ -37,7 +37,7 @@ jobs:
         if: matrix.type == 'keyboard-ios' && github.ref == 'refs/heads/master'
         run: |
           source "$DIVVUN_CI_CONFIG/enc/env.sh"
-          fastlane pilot upload --skip_submission --skip_waiting_for_build_processing --ipa "output/ios-build/ipa/Divvun Keyboards.ipa"
+          fastlane pilot upload --api_key_path "$DIVVUN_CI_CONFIG/enc/creds/macos/appstore-key.json" --skip_submission --skip_waiting_for_build_processing --ipa "output/ios-build/ipa/Divvun Keyboards.ipa"
         env:
           SPACESHIP_SKIP_2FA_UPGRADE: 1
           LANG: en_US.UTF-8
