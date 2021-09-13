@@ -8,7 +8,7 @@ jobs:
       matrix:
         include:
           - type: keyboard-ios
-            os: macos-latest
+            os: [self-hosted, macos, aarch64]
           - type: keyboard-android
             os: macos-latest
     steps:
@@ -23,27 +23,10 @@ jobs:
           repo: https://pahkat.uit.no/devtools/
           channel: nightly
           packages: kbdgen
-      - name: Install Rust toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          profile: minimal
-          override: true
       - name: Install Dependencies (iOS) 
         if: matrix.type == 'keyboard-ios'
         run: |
-          sudo xcode-select -s $XCODE_12_DEVELOPER_DIR
-          sudo gem install fastlane
-          rustup component add rustfmt
-          rustup target add aarch64-apple-ios
-          rustup target add x86_64-apple-ios
-          cargo install cargo-lipo
-      - name: Install Dependencies (Android)
-        if: matrix.type == 'keyboard-android'
-        run: |
-          rustup target add aarch64-linux-android
-          rustup target add armv7-linux-androideabi
-          cargo install cargo-ndk
+          brew install fastlane
       - name: Run kbdgen
         id: build
         uses: divvun/actions/keyboard/build-meta@master
@@ -58,6 +41,11 @@ jobs:
         env:
           SPACESHIP_SKIP_2FA_UPGRADE: 1
           LANG: en_US.UTF-8
+      - uses: actions/upload-artifact@v2
+        if: matrix.type == 'keyboard-android' && github.ref == 'refs/heads/master'
+        with:
+          name: android
+          path: output/*.apk
       - name: Publish (Android)
         if: matrix.type == 'keyboard-android' && github.ref == 'refs/heads/master'
         run: |
