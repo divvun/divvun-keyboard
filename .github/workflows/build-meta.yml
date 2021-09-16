@@ -23,6 +23,12 @@ jobs:
           repo: https://pahkat.uit.no/devtools/
           channel: nightly
           packages: kbdgen
+      - uses: actions/setup-java@v2
+        name: Setup Java
+        if: matrix.type == 'keyboard-android'
+        with:
+          distribution: 'temurin'
+          java-version: '11'
       - name: Run kbdgen
         id: build
         uses: divvun/actions/keyboard/build-meta@master
