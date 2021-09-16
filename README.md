@@ -6,3 +6,8 @@
 This repository exists for the purposes of triggering CI and CD. It is a kbdgen meta-repository, and serves as the basis for the content of the mobile keyboard apps.
 
 Edits to the layouts should happen in the keyboard repos in [GiellaLT](https://github.com/giellalt), one repo for each language.
+
+The installable keyboard apps can be found here:
+
+- [Android](https://play.google.com/store/apps/details?id=no.uit.giella.keyboards.Sami)
+- [iOS](https://apps.apple.com/th/app/sami-keyboards/id948386025)
