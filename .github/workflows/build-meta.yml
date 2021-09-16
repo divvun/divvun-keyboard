@@ -23,10 +23,6 @@ jobs:
           repo: https://pahkat.uit.no/devtools/
           channel: nightly
           packages: kbdgen
-      - name: Install Dependencies (iOS) 
-        if: matrix.type == 'keyboard-ios'
-        run: |
-          brew install fastlane
       - name: Run kbdgen
         id: build
         uses: divvun/actions/keyboard/build-meta@master
