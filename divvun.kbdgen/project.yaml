@@ -14,6 +14,9 @@ locales:
   nn:
     name: "Divvun-tastatur"
     description: "Tastatur for minoritets- og urfolksspråk frå Divvun-gruppa ved UiT."
+  ru:
+    name: "Клавиатуры Divvun"
+    description: "Клавиатуры для языков меньшинств и коренных народов от группы Divvun в UiT."
   se:
     name: "Divvun-boallobeavddit"
     description: "Unnitlogu- ja eamiálbmotgielaid boallobeavddit maid Divvun-joavku UiT:s lea ráhkadan."
