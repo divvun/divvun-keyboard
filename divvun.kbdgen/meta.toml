@@ -10,14 +10,6 @@ layouts = ["myv"]
 github = "giellalt/keyboard-sjd"
 layouts = ["sjd"]
 
-[bundle.sms]
-github = "giellalt/keyboard-sms"
-layouts = ["sms"]
-
-[bundle.smn]
-github = "giellalt/keyboard-smn"
-layouts = ["smn"]
-
 [bundle.sma]
 github = "giellalt/keyboard-sma"
 layouts = ["sma"]
@@ -30,3 +22,10 @@ layouts = ["se"]
 github = "giellalt/keyboard-smj"
 layouts = ["smj-NO", "smj-SE"]
 
+[bundle.smn]
+github = "giellalt/keyboard-smn"
+layouts = ["smn"]
+
+[bundle.sms]
+github = "giellalt/keyboard-sms"
+layouts = ["sms"]
