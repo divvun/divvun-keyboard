@@ -6,6 +6,10 @@ layouts = ["mdf"]
 github = "giellalt/keyboard-myv"
 layouts = ["myv"]
 
+[bundle.sjd]
+github = "giellalt/keyboard-sjd"
+layouts = ["sjd"]
+
 [bundle.sms]
 github = "giellalt/keyboard-sms"
 layouts = ["sms"]
