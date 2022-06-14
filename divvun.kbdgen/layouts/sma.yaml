@@ -1,0 +1,236 @@
+displayNames:
+  sma: Åarjelsaemien gïele
+  en: South Sami
+  fi: Eteläsaame
+  nb: Sørsamisk
+  'no': Sørsamisk
+  nn: Sørsamisk
+  da: Sydsamisk
+  se: Lullisámegiella
+  sv: Sydsamiska
+android:
+  config:
+    spellerPackageKey: https://pahkat.uit.no/main/packages/speller-sma?platform=mobile
+    spellerPath: sma.bhfst
+  primary:
+    layers:
+      default: |
+        q w e r t y u i o p å
+        a s d f g h j k l ö æ
+        \s{shift} z x c v b n m ï \s{backspace}
+      shift: |
+        Q W E R T Y U I O P Å
+        A S D F G H J K L Ö Æ
+        \s{shift} Z X C V B N M Ï \s{backspace}
+iOS:
+  config:
+    spellerPackageKey: https://pahkat.uit.no/main/packages/speller-sma?platform=mobile
+    spellerPath: sma.bhfst
+  primary:
+    layers:
+      default: |
+        q w e r t y u i o p å
+        a s d f g h j k l ö æ
+        \s{shift:1.25} \s{spacer:0.25} z x c v b n m ï \s{spacer:0.25} \s{backspace:1.25}
+      shift: |
+        Q W E R T Y U I O P Å
+        A S D F G H J K L Ö Æ
+        \s{shift:1.25} \s{spacer:0.25} Z X C V B N M Ï \s{spacer:0.25} \s{backspace:1.25}
+  iPad-9in:
+    layers:
+      default: |
+        q w e r t y u i o p å ï \s{backspace}
+        \s{spacer:0.25} a s d f g h j k l ö æ \s{return:1.25}
+        \s{shift:1.1} z x c v b n m , . \s{shift:2.4}
+      shift: |
+        Q W E R T Y U I O P Å Ï \s{backspace}
+        \s{spacer:0.25} A S D F G H J K L Ö Æ \s{return:1.25}
+        \s{shift:1.1} Z X C V B N M ! ? \s{shift:2.4}
+      alt: |
+        1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
+        \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+        \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
+      alt+shift: |
+        1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
+        \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+        \s{shift:1.1} % _ - = / ; : ! ? \s{shift:2.4}
+      symbols-1: |
+        1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
+        \s{spacer:0.25} @ # € & * ( ) ' " + • \s{return:1.25}
+        \s{shiftSymbols:1.1} % _ - = / ; : , . \s{shiftSymbols:2.4}
+      symbols-2: |
+        1 2 3 4 5 6 7 8 9 0 ` ´ \s{backspace}
+        \s{spacer:0.25} $ £ ¥ ^ [ ] { } — ° … \s{return:1.25}
+        \s{shiftSymbols:1.1} § | ~ ≠ \ < > ! ? \s{shiftSymbols:2.4}
+  iPad-12in:
+    layers:
+      default: |
+        ' 1 2 3 4 5 6 7 8 9 0 + ´ \s{backspace:1.5}
+        \s{spacer:1.5}  q w e r t y u i o p å ï @
+        \s{caps:1.75}   a s d f g h j k l ö æ \s{return:1.75}
+        \s{shift:1.25} < z x c v b n m , . - \s{shift:2.25}
+      shift: |
+        § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+        \s{spacer:1.5}  Q W E R T Y U I O P Å Ï *
+        \s{caps:1.75}   A S D F G H J K L Ö Æ \s{return:1.75}
+        \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
+      alt: |
+        § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+        \s{spacer:1.5}  q w e r t y u i o p å ï *
+        \s{caps:1.75}   a s d f g h j k l ö æ \s{return:1.75}
+        \s{shift:1.25} < z x c v b n m ; : _ \s{shift:2.25}
+      alt+shift: |
+        § ! " # kr % & / ( ) = ? ` \s{backspace:1.5}
+        \s{spacer:1.5}  Q W E R T Y U I O P Å Ï *
+        \s{caps:1.75}   A S D F G H J K L Ö Æ \s{return:1.75}
+        \s{shift:1.25} > Z X C V B N M ; : _ \s{shift:2.25}
+      symbols-1: |
+        ` 1 2 3 4 5 6 7 8 9 0 ¨ ^ \s{backspace:1.5}
+        \s{spacer:1.5} [ ] { } # % ^ * + = \ | ~
+        \s{spacer:1.75} - / : ; ( ) kr & @ $ £ \s{return:1.75}
+        \s{spacer:3.25} … . , ? ! ' " _ € \s{spacer:2.25}
+transforms:
+  '`':
+    ' ': '`'
+    a: à
+    A: À
+    e: è
+    E: È
+    i: ì
+    I: Ì
+    'n': ǹ
+    'N': Ǹ
+    o: ò
+    O: Ò
+    u: ù
+    U: Ù
+    v: ǜ
+    V: Ǜ
+    w: ẁ
+    W: Ẁ
+    'y': ỳ
+    'Y': Ỳ
+  ´:
+    ' ': ´
+    a: á
+    A: Á
+    c: ć
+    C: Ć
+    e: é
+    E: É
+    g: ǵ
+    G: Ǵ
+    i: í
+    I: Í
+    k: ḱ
+    K: Ḱ
+    l: ĺ
+    L: Ĺ
+    m: ḿ
+    M: Ḿ
+    'n': ń
+    'N': Ń
+    o: ó
+    O: Ó
+    p: ṕ
+    P: Ṕ
+    r: ŕ
+    R: Ŕ
+    s: ś
+    S: Ś
+    u: ú
+    U: Ú
+    v: ǘ
+    V: Ǘ
+    w: ẃ
+    W: Ẃ
+    'y': ý
+    'Y': Ý
+    z: ź
+    Z: Ź
+    æ: ǽ
+    Æ: Ǽ
+    ø: ǿ
+    Ø: Ǿ
+  ¨:
+    ' ': ¨
+    a: ä
+    A: Ä
+    e: ë
+    E: Ë
+    i: ï
+    I: Ï
+    o: ö
+    O: Ö
+    u: ü
+    U: Ü
+    'y': ÿ
+    'Y': Ÿ
+  ^:
+    ' ': ^
+    a: â
+    A: Â
+    c: ĉ
+    C: Ĉ
+    e: ê
+    E: Ê
+    i: î
+    I: Î
+    j: ĵ
+    J: Ĵ
+    o: ô
+    O: Ô
+    s: ŝ
+    S: Ŝ
+    u: û
+    U: Û
+    'y': ŷ
+    'Y': Ŷ
+    z: ẑ
+    Z: Ẑ
+longpress:
+  A: Å Ä Á À Â Ã Ā Ạ
+  E: Ë É È Ê Ẽ Ē Ẹ Ė Ǝ
+  I: Í Ì Î Ĩ Ī Ị I
+  O: Ø   Ó Ò Ô Õ Ō Ọ Ȯ Ő Œ
+  U: Ü Ú Ù Û Ũ Ū Ụ Ů
+  'Y': Ÿ Ý Ỳ Ŷ Ỹ Ȳ Ẏ Y̊ Ɏ
+  Æ: Ä
+  Ö: Ø
+  C: Č Ç Ĉ
+  D: Đ Ḓ Ď
+  G: Ǥ Ǧ Ģ
+  K: Ǩ Ḵ Ķ
+  'N': Ŋ Ñ Ň Ṋ Ṉ
+  S: Š Ŝ Ṣ Ș SS
+  T: Ŧ Ț Ṱ Ṯ
+  Z: Ž Ʒ Ǯ
+  a: å ä á à â ã ā ạ
+  e: ë é è ê ẽ ē ẹ ė ǝ
+  i: í ì î ĩ ī ị i
+  o: ø   ó ò ô õ ō ọ ȯ ő œ
+  u: ü ú ù û ũ ū ụ ů
+  'y': ÿ ý ỳ ŷ ỹ ȳ ẏ ẙ ɏ
+  æ: ä
+  ö: ø
+  c: č ç ĉ
+  d: đ ḓ ď
+  g: ǥ ǧ ģ
+  k: ǩ ḵ ķ
+  'n': ŋ ñ ň ṋ ṉ
+  s: š ŝ ṣ ș ß
+  t: ŧ ț ṱ ṯ
+  z: ž ʒ ǯ
+  '%': ‰ ∞
+  =: ≠ ≈
+  '-': • – —
+  '&': §
+  '?': ¿
+  '!': ¡
+  '.': ', ; : ? ! ¿ ¡'
+  '"': „ “ ” « »
+  "'": ‚ ‘ ’
+keyNames:
+  space: væhtagaske
+  return: linje\u00ADmålsome
+
