@@ -36,6 +36,14 @@ iOS:
         Á Š E R T Y U I O P Ŋ
         A S D F G H J K L Đ Ŧ
         \s{shift:1.25} \s{spacer:0.25} Ž Z Č C V B N M \s{spacer:0.25} \s{backspace:1.25}
+      symbols-1: |
+        1 2 3 4 5 6 7 8 9 0
+        - / : ; ( ) kr & @ "
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
+      symbols-2: |
+        [ ] { } # % ^ * + =
+        _ \ | ~ < > € $ £ •
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   iPad-9in:
     layers:
       default: |
@@ -137,5 +145,5 @@ longpress:
   "'": ‚ ‘ ’
 keyNames:
   space: gaska
-  return: linnjá\u{00AD}molsun
+  return: linnjá\u00ADmolsun
 

@@ -35,6 +35,16 @@ iOS:
         Й Ц У К Е Н Г Ш Щ З Х Ъ
         Ф Ы В А П Р О Л Д Ж Э Ё
         \s{shift:1.25} \s{spacer:0.25} Я Ч С М И Т Ь Б Ю \s{spacer:0.25} \s{backspace:1.25}
+      symbols-1: |
+        1 2 3 4 5 6 7 8 9 0
+        © ™ £ € ∞ § | [ ] ≈
+        - / : ; ( ) € & @ "
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
+      symbols-2: |
+        [ ] { } # % ^ * + =
+        ¡ ® ¥ ¢ ‰ ¶ \ { } ≠
+        _ \ | ~ « » € $ £ •
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   iPad-9in:
     layers:
       default: |

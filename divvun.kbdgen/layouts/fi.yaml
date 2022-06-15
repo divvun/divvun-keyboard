@@ -29,6 +29,14 @@ iOS:
         Q W E R T Y U I O P Å
         A S D F G H J K L Ö Ä
         \s{shift:1.25} \s{spacer:0.75} Z X C V B N M \s{spacer:0.75} \s{backspace:1.25}
+      symbols-1: |
+        1 2 3 4 5 6 7 8 9 0
+        - / : ; ( ) € & @ "
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
+      symbols-2: |
+        [ ] { } # % ^ * + =
+        _ \ | ~ < > € $ £ •
+        \s{shiftSymbols} \s{spacer:0.25} . , ? ! ' \s{spacer:0.25} \s{backspace}
   iPad-9in:
     layers:
       default: |
@@ -117,5 +125,5 @@ longpress:
   z: ž ʒ ǯ
 keyNames:
   space: väli
-  return: rivin\u{00AD}\u{00AD}vaihto
+  return: rivin\u00AD\u00ADvaihto
 
