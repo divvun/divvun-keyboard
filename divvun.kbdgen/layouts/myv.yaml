@@ -78,6 +78,37 @@ iOS:
         \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° …    \s{shiftSymbols}
         \s{spacer:0.5}   > § | ~ ≠ \ ‚ „ ! ?      \s{return:2.5}
   iPad-12in:
+    layers:
+      default: |
+        >                1 2 3 4 5 6 7 8 9 0 - = \s{backspace}
+        \s{spacer:0.5}   й ц у к е н г ш щ з х ъ  \s{spacer:0.5}
+        \s{shift}        ф ы в а п р о л д ж э ё  \s{shift}
+        \s{spacer:0.5}     я ч с м и т ь б ю    \s{return:2.5}
+      shift: |
+        <                ! " № % : , . ; ( ) _ + \s{backspace}
+        \s{spacer:0.5}   Й Ц У К Е Н Г Ш Щ З Х Ъ \s{spacer:0.5}
+        \s{shift}        Ф Ы В А П Р О Л Д Ж Э Ё  \s{shift}
+        \s{spacer:0.5}     Я Ч С М И Т Ь Б Ю    \s{return:2.5}
+      alt: |
+        §                ! @ # $ % ^ & * ( ) – »  \s{backspace}
+        \s{spacer:0.5}   ј џ ќ ® ѣ ҥ ѓ ѕ ў ‘ “ ө  \s{spacer:0.5}
+        \s{shift}        ѳ ѵ ѷ ӓ © } ° љ … җ є ә    \s{shift}
+        \s{spacer:0.5}   ] ђ ≈ ≠ µ і ™ ~ ≤ ≥ “      \s{return:2.5}
+      alt+shift: |
+        ±                  | " £ € ∞ ¬ ¶ √ ' ` — «  \s{backspace}
+        \s{spacer:0.5}   Ј Џ Ќ ® Ѣ Ҥ Ѓ Ѕ Ў ’ ” Ө  \s{spacer:0.5}
+        \s{shift}        Ѳ Ѵ Ѷ Ӓ © { • Љ … Җ Є Ә    \s{shift}
+        \s{spacer:0.5}   [ Ђ ≈ ≠ µ І ™ ~ < > „      \s{return:2.5}
+      symbols-1: |
+        1                  2 3 4 5 6 7 8 9 0 ` ±  \s{backspace}
+        \s{spacer:0.5}   © ™ £ € ∞ § | ‹ › ≈ ´ ˚  \s{spacer:0.5}
+        \s{shiftSymbols} @ # € & * ( ) ' " ° •    \s{shiftSymbols}
+        \s{spacer:0.5}   < % _ - = / ; : , .      \s{return:2.5}
+      symbols-2: |
+        1                  2 3 4 5 6 7 8 9 0 ` ¿  \s{backspace}
+        \s{spacer:0.5}   ¡ ® ¥ ¢ ‰ ¶ \ « » ≠ ´ ^  \s{spacer:0.5}
+        \s{shiftSymbols} $ £ ¥ ^ [ ] { } — ° …    \s{shiftSymbols}
+        \s{spacer:0.5}   > § | ~ ≠ \ ‚ „ ! ?      \s{return:2.5}
 macOS:
   primary:
     layers:
