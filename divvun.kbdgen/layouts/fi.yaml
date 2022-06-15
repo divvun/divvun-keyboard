@@ -117,5 +117,5 @@ longpress:
   z: ž ʒ ǯ
 keyNames:
   space: väli
-  return: rivin\u00AD\u00ADvaihto
+  return: rivin\u{00AD}\u{00AD}vaihto
 

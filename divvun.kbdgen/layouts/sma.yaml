@@ -232,5 +232,5 @@ longpress:
   "'": ‚ ‘ ’
 keyNames:
   space: væhtagaske
-  return: linje\u00ADmålsome
+  return: linje\u{00AD}målsome
 

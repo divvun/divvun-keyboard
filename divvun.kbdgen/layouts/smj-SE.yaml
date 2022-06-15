@@ -396,5 +396,5 @@ longpress:
   "'": ‚ ‘ ’
 keyNames:
   space: gasska
-  return: linnja\u00ADmålssom
+  return: linnja\u{00AD}målssom
 

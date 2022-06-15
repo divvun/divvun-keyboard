@@ -137,5 +137,5 @@ longpress:
   "'": ‚ ‘ ’
 keyNames:
   space: gaska
-  return: linnjá\u00ADmolsun
+  return: linnjá\u{00AD}molsun
 
