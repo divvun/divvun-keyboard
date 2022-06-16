@@ -14,19 +14,26 @@ tasks:
       else: ${event.repository.html_url}
     repo_name:
       $if: tasks_for == "github-pull-request"
-      then: ${event.pull_request.parent.name}
+      then: ${event.pull_request.head.repo.name}
       else: ${event.repository.name}
     repo_full_name:
       $if: tasks_for == "github-pull-request"
-      then: ${event.pull_request.parent.full_name}
+      then: ${event.pull_request.head.repo.full_name}
       else: ${event.repository.full_name}
     branch:
-        $if: "event.ref[:11] == 'refs/heads/'"
-        then: "branch:${event.ref[11:]}"
+        $if: tasks_for == "github-pull-request"
+        then: "pull-request"
         else:
-          $if: "event.ref[:10] == 'refs/tags/'"
-          then: "tag:${event.ref[10:]}"
-          else: "pull-request"
+          $if: "event.ref[:11] == 'refs/heads/'"
+          then: "branch:${event.ref[11:]}"
+          else:
+            $if: "event.ref[:10] == 'refs/tags/'"
+            then: "tag:${event.ref[10:]}"
+            else: "unknown"
+    git_ref:
+      $if: tasks_for == "github-pull-request"
+      then: "refs/pull/${event.pull_request.number}"
+      else: ${event.ref}
     should_run:
       $match:
         (tasks_for == "github-push") || (tasks_for == "github-pull-request" && event["action"] in ["opened","reopened","synchronize"]):
@@ -37,9 +44,12 @@ tasks:
           name: Decision task
           description: ''
           owner: ${event.sender.login}@users.noreply.github.com
-          source: ${event.compare}
+          source:
+            $if: tasks_for == "github-pull-request"
+            then: ${event.pull_request.html_url}
+            else: ${event.compare}
         tags:
-          git_ref: ${event.ref}
+          git_ref: ${git_ref}
         projectId: "divvun"
         taskQueueId: divvun/linux
         deadline:
@@ -68,11 +78,17 @@ tasks:
           env:
             GIT_URL: ${event.repository.clone_url}
             TASK_FOR: ${tasks_for}
-            GIT_REF: ${event.ref}
-            GITHUB_REF: ${event.ref}
-            GIT_SHA: ${event.after}
-            TASK_OWNER: ${event.pusher.name}@users.noreply.github.com
-            TASK_SOURCE: ${event.compare}
+            GIT_REF: ${git_ref}
+            GITHUB_REF: ${git_ref}
+            GIT_SHA:
+              $if: tasks_for == "github-pull-request"
+              then: ${event.pull_request.head.sha}
+              else: ${event.after}
+            TASK_OWNER: ${event.sender.login}@users.noreply.github.com
+            TASK_SOURCE:
+              $if: tasks_for == "github-pull-request"
+              then: ${event.pull_request.html_url}
+              else: ${event.compare}
             REPO_NAME: ${repo_name}
             REPO_FULL_NAME: ${repo_full_name}
             CI_REPO_URL: https://github.com/divvun/taskcluster-scripts.git
