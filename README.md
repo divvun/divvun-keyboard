@@ -10,4 +10,4 @@ Edits to the layouts should happen in the keyboard repos in [GiellaLT](https://g
 The installable keyboard apps can be found here:
 
 - [Android](https://play.google.com/store/apps/details?id=no.uit.giella.keyboards.Sami)
-- [iOS](https://apps.apple.com/th/app/sami-keyboards/id948386025)
+- [iOS](https://apps.apple.com/th/app/sami-keyboards/id948386025) 
