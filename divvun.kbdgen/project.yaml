@@ -30,7 +30,7 @@ locales:
 author: The Divvun Group, UiT Norgga árktalaš universitehta
 email: feedback@divvun.no
 
-copyright: (c) 2015-2020 Divvun/Giellatekno/UiT
+copyright: (c) 2015-2023 Divvun/Giellatekno/UiT
 organisation: UiT Norgga árktalaš universitehta
 
 dependencies:
@@ -43,6 +43,12 @@ dependencies:
   sjd:
     url: "giellalt/keyboard-sjd"
     layouts: ["sjd"]
+  sje:
+    url: "giellalt/keyboard-sje"
+    layouts: ["sje"]
+  sju:
+    url: "giellalt/keyboard-sju"
+    layouts: ["sju"]
   sma:
     url: "giellalt/keyboard-sma"
     layouts: ["sma"]
