@@ -40,6 +40,9 @@ dependencies:
   myv:
     url: "giellalt/keyboard-myv"
     layouts: ["myv"]
+  rmn:
+    url: "giellalt/keyboard-rmn"
+    layouts: ["rmn"]
   sjd:
     url: "giellalt/keyboard-sjd"
     layouts: ["sjd"]
